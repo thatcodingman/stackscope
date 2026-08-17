@@ -78,7 +78,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   letter-spacing: -0.01em;
   color: var(--ink);
   text-decoration: none;
-  display: flex; align-items: center; gap: 8px;
+  display: flex; align-items: center; gap: 2px;
 }
 .logo .bracket { font-family: var(--font-mono); color: var(--teal); font-weight: 500; }
 .main-nav { display: flex; gap: 28px; align-items: center; }
@@ -369,4 +369,10 @@ footer {
   .wrap { padding: 0 18px; }
   .hero { padding: 52px 0 44px; }
   .foot-grid { flex-direction: column; }
+
+  .site-header .wrap { height: 56px; }
+  .logo { font-size: 1rem; }
+  .main-nav { gap: 16px; }
+  .main-nav a { font-size: 0.68rem; letter-spacing: 0.02em; }
+  .main-nav a:nth-child(2), .main-nav a:nth-child(3) { display: none; }
 }
