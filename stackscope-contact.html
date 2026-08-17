@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact StackScope</title>
+<meta name="description" content="Report a pricing error, suggest a category, or get in touch with StackScope.">
+<link rel="canonical" href="https://usestackscope.com/stackscope-contact.html">
+<meta property="og:title" content="Contact StackScope">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="stackscope-styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="bracket">[</span>StackScope<span class="bracket">]</span></a>
+    <nav class="main-nav">
+      <a href="index.html#categories">Categories</a>
+      <a href="index.html#crm-report">Reports</a>
+      <a href="index.html#methodology">Methodology</a>
+      <a href="stackscope-about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h1>Spot an error, or want a category covered?</h1>
+      <p>Pricing changes fast and vendors don't announce it. If a figure on the site is stale, this is the quickest way to get it fixed.</p>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="wrap">
+      <form class="contact-form" name="stackscope-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="stackscope-contact">
+        <p class="hidden" style="display:none;">
+          <label>Don't fill this out if you're human: <input name="bot-field"></label>
+        </p>
+
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-row">
+          <label for="reason">Reason</label>
+          <select id="reason" name="reason">
+            <option>Pricing correction</option>
+            <option>Category request</option>
+            <option>General question</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send message</button>
+      </form>
+
+      <p class="contact-info">Prefer email? Reach us directly at <a href="mailto:hello@usestackscope.com">hello@usestackscope.com</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <p class="foot-disclosure">StackScope aggregates publicly available pricing and sentiment data. We are not affiliated with, and do not receive payment from, any vendor listed. Reports are informational and are not a purchasing recommendation — always confirm current terms with the vendor directly.</p>
+    <nav class="foot-links">
+      <a href="index.html#categories">Categories</a>
+      <a href="index.html#methodology">Methodology</a>
+      <a href="stackscope-about.html">About</a>
+      <a href="stackscope-terms.html">Terms</a>
+      <a href="stackscope-privacy.html">Privacy</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

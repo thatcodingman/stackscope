@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StackScope FAQ</title>
+<meta name="description" content="Common questions about how StackScope sources pricing data, whether vendors pay for placement, and how often reports are updated.">
+<link rel="canonical" href="https://usestackscope.com/stackscope-faq.html">
+<meta property="og:title" content="StackScope FAQ">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="stackscope-styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="bracket">[</span>StackScope<span class="bracket">]</span></a>
+    <nav class="main-nav">
+      <a href="index.html#categories">Categories</a>
+      <a href="index.html#crm-report">Reports</a>
+      <a href="index.html#methodology">Methodology</a>
+      <a href="stackscope-about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">FAQ</p>
+      <h1>Frequently asked questions</h1>
+      <p>The most common questions about how reports get built and what StackScope does with the data.</p>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="wrap content-narrow">
+
+      <div class="faq-item open">
+        <button class="faq-q" aria-expanded="true">Do vendors pay to be listed or ranked higher? <span class="plus">+</span></button>
+        <div class="faq-a"><p>No. Every tool in a category is listed regardless of any commercial relationship, and order is driven by the data in the table, not by payment. If a page ever carries affiliate links or ads, that's disclosed on the Terms page and doesn't affect ranking.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Where does the pricing data come from? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Vendor pricing pages and public documentation, cross-checked against at least three independent third-party sources before publishing. See the methodology section on the homepage for the full process.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How often is a report updated? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Every report carries a "last verified" date. Reports are rechecked on a recurring cycle, and vendors or readers can flag stale figures through the contact page at any time.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What does "aggregated sentiment" mean? <span class="plus">+</span></button>
+        <div class="faq-a"><p>A short summary of recurring, publicly stated themes from reviews and community discussion about a tool — never an invented quote, and never a single outlier treated as consensus.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">I think a price is wrong — what do I do? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Use the <a href="stackscope-contact.html">contact form</a> and include a link to the current vendor pricing page. Corrections get prioritized over new coverage.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Can I suggest a category or a tool to cover? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Yes — that's exactly what the "Notify me" links on the category cards are for, or reach out directly through the contact page.</p></div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <p class="foot-disclosure">StackScope aggregates publicly available pricing and sentiment data. We are not affiliated with, and do not receive payment from, any vendor listed. Reports are informational and are not a purchasing recommendation — always confirm current terms with the vendor directly.</p>
+    <nav class="foot-links">
+      <a href="index.html#categories">Categories</a>
+      <a href="index.html#methodology">Methodology</a>
+      <a href="stackscope-about.html">About</a>
+      <a href="stackscope-terms.html">Terms</a>
+      <a href="stackscope-privacy.html">Privacy</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-q').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    item.classList.toggle('open', !isOpen);
+    btn.setAttribute('aria-expanded', String(!isOpen));
+  });
+});
+</script>
+</body>
+</html>
