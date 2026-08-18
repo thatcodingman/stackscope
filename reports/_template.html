@@ -10,12 +10,18 @@
   2. Fill in the real tools, prices, and sentiment (verify every
      price against the vendor's own pricing page + 2 more sources).
      Show BOTH annual and monthly billing prices in the note line
-     for each tier — don't drop the monthly figure.
-  3. In ../data-reports.js, set that entry's "live" to true, "slug"
+     for each tier — don't drop the monthly figure. Lead each
+     sentiment cell with a bolded one-line "Catch:" summary before
+     the fuller context — keeps the table scannable.
+  3. Qualify "Best value" if it's not unconditionally true (e.g.
+     "Best value (paid)" if a cheaper tool has a real free plan).
+     Distinguish a genuine ongoing free plan from a time-limited
+     trial/program in the Free plan column — don't group them.
+  4. In ../data-reports.js, set that entry's "live" to true, "slug"
      to match your filename (without .html), and "date" to today
-  4. Update the renderRelatedReports(...) slug near the bottom of
+  5. Update the renderRelatedReports(...) slug near the bottom of
      this file to match your own slug
-  5. Update the category card on the homepage (index.html) to link
+  6. Update the category card on the homepage (index.html) to link
      here instead of "#"
 -->
 <!DOCTYPE html>
@@ -77,7 +83,7 @@
                 <th data-sort="text">Free plan</th>
                 <th data-sort="number">Entry tier</th>
                 <th data-sort="number">Mid tier</th>
-                <th data-sort="number">Top tier</th>
+                <th data-sort="number">Highest public price</th>
                 <th data-sort="text">Aggregated sentiment</th>
               </tr>
             </thead>
@@ -88,7 +94,7 @@
                 <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
                 <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
                 <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
-                <td class="sentiment">[What reviewers consistently praise, and the most common recurring complaint — paraphrased, never a fabricated quote.]</td>
+                <td class="sentiment"><b>Catch: [one-line summary of the biggest recurring complaint].</b> [What reviewers consistently praise, then the fuller context on the catch — paraphrased, never a fabricated quote.]</td>
               </tr>
               <tr>
                 <td class="tool-name">[Tool name]</td>
@@ -96,7 +102,7 @@
                 <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
                 <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
                 <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
-                <td class="sentiment">[Sentiment summary]</td>
+                <td class="sentiment"><b>Catch: [one-line summary]</b> [Fuller sentiment context]</td>
               </tr>
               <tr>
                 <td class="tool-name">[Tool name] <span class="badge badge-verified">Best value</span></td>
@@ -104,7 +110,7 @@
                 <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
                 <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
                 <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
-                <td class="sentiment">[Sentiment summary]</td>
+                <td class="sentiment"><b>Catch: [one-line summary]</b> [Fuller sentiment context]</td>
               </tr>
               <tr>
                 <td class="tool-name">[Tool name]</td>
@@ -112,7 +118,7 @@
                 <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
                 <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
                 <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
-                <td class="sentiment">[Sentiment summary]</td>
+                <td class="sentiment"><b>Catch: [one-line summary]</b> [Fuller sentiment context]</td>
               </tr>
             </tbody>
           </table>
