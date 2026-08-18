@@ -11,8 +11,9 @@
      price against the vendor's own pricing page + 2 more sources).
      Show BOTH annual and monthly billing prices in the note line
      for each tier — don't drop the monthly figure. Lead each
-     sentiment cell with a bolded one-line "Catch:" summary before
-     the fuller context — keeps the table scannable.
+     sentiment cell with a bolded one-line "Catch:" summary —
+     the most consistently reported weakness OR cost caveat, not
+     necessarily a literal complaint — before the fuller context.
   3. Qualify "Best value" if it's not unconditionally true (e.g.
      "Best value (paid)" if a cheaper tool has a real free plan).
      Distinguish a genuine ongoing free plan from a time-limited
@@ -124,6 +125,21 @@
           </table>
         </div>
         <p class="report-footnote">Figures are aggregated from vendor pricing pages and independent third-party pricing research as of [Month Year], and reflect published list prices — actual cost depends on seat count, add-ons, and negotiated terms. Confirm current pricing directly with each vendor before purchasing. This is not a recommendation to buy any specific product.</p>
+
+        <div class="sources-list">
+          <h4>Sources checked</h4>
+          <div class="group">
+            <span class="group-label">[Tool name]</span>
+            <a href="[real URL you actually checked]" target="_blank" rel="noopener">[Source name]</a>
+            <a href="[real URL you actually checked]" target="_blank" rel="noopener">[Source name]</a>
+          </div>
+          <div class="group">
+            <span class="group-label">[Tool name]</span>
+            <a href="[real URL]" target="_blank" rel="noopener">[Source name]</a>
+          </div>
+          <!-- One group per tool. Only link sources you actually
+               consulted — never fabricate a URL. -->
+        </div>
       </div>
     </div>
   </section>
