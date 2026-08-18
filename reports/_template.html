@@ -1,0 +1,159 @@
+<!--
+  STACKSCOPE — CATEGORY REPORT TEMPLATE
+  =======================================
+  Same sourcing standard as the CRM report on the homepage:
+  aggregate → cross-check against 3+ sources → sentiment scan →
+  re-verify on a schedule. Never fabricate a quote or a price.
+
+  How to publish a new report:
+  1. Copy this file to reports/your-category.html
+  2. Fill in the real tools, prices, and sentiment (verify every
+     price against the vendor's own pricing page + 2 more sources).
+     Show BOTH annual and monthly billing prices in the note line
+     for each tier — don't drop the monthly figure.
+  3. In ../data-reports.js, set that entry's "live" to true, "slug"
+     to match your filename (without .html), and "date" to today
+  4. Update the renderRelatedReports(...) slug near the bottom of
+     this file to match your own slug
+  5. Update the category card on the homepage (index.html) to link
+     here instead of "#"
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Help Desk Software — Full Comparison — StackScope</title>
+<meta name="description" content="Zendesk, Freshdesk, Intercom, and Help Scout compared on pricing, features, and aggregated sentiment — sourced from public data, no vendor bias.">
+<link rel="canonical" href="https://usestackscope.com/reports/help-desk.html">
+<meta property="og:title" content="Help Desk Software — Full Comparison — StackScope">
+<meta property="og:type" content="article">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="../stackscope-styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="logo"><span class="bracket">[</span>StackScope<span class="bracket">]</span></a>
+    <nav class="main-nav">
+      <a href="../index.html#categories">Categories</a>
+      <a href="../index.html#crm-report">Reports</a>
+      <a href="../index.html#methodology">Methodology</a>
+      <a href="../stackscope-about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap" style="padding-top: 36px;">
+    <p style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--ink-soft);">
+      <a href="../index.html" style="color: var(--ink-soft);">Home</a> /
+      <a href="../index.html#categories" style="color: var(--ink-soft);">Categories</a> /
+      Help Desk Software
+    </p>
+  </div>
+
+  <section class="section" style="padding-top: 12px;">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Live report</p>
+        <h2>Help desk software — full comparison</h2>
+        <p>Click any column header to re-sort. Prices are per-seat/agent, monthly, billed annually unless noted.</p>
+      </div>
+
+      <div class="report-card">
+        <div class="report-toolbar">
+          <span>4 tools · Help desk software</span>
+          <span>Last verified: [Month Year]</span>
+        </div>
+        <div class="table-scroll">
+          <table class="compare">
+            <thead>
+              <tr>
+                <th data-sort="text">Tool</th>
+                <th data-sort="text">Free plan</th>
+                <th data-sort="number">Entry tier</th>
+                <th data-sort="number">Mid tier</th>
+                <th data-sort="number">Top tier</th>
+                <th data-sort="text">Aggregated sentiment</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tool-name">[Tool name]</td>
+                <td>[Free plan details, or "No free plan"]<span class="note">[note]</span></td>
+                <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
+                <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
+                <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
+                <td class="sentiment">[What reviewers consistently praise, and the most common recurring complaint — paraphrased, never a fabricated quote.]</td>
+              </tr>
+              <tr>
+                <td class="tool-name">[Tool name]</td>
+                <td>[Free plan details]<span class="note">[note]</span></td>
+                <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
+                <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
+                <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
+                <td class="sentiment">[Sentiment summary]</td>
+              </tr>
+              <tr>
+                <td class="tool-name">[Tool name] <span class="badge badge-verified">Best value</span></td>
+                <td>[Free plan details]<span class="note">[note]</span></td>
+                <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
+                <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
+                <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
+                <td class="sentiment">[Sentiment summary]</td>
+              </tr>
+              <tr>
+                <td class="tool-name">[Tool name]</td>
+                <td>[Free plan details]<span class="note">[note]</span></td>
+                <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
+                <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
+                <td data-value="[number]"><span class="price">$[X]/seat</span><span class="note">[tier name] · $[Y]/mo billed monthly</span></td>
+                <td class="sentiment">[Sentiment summary]</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="report-footnote">Figures are aggregated from vendor pricing pages and independent third-party pricing research as of [Month Year], and reflect published list prices — actual cost depends on seat count, add-ons, and negotiated terms. Confirm current pricing directly with each vendor before purchasing. This is not a recommendation to buy any specific product.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Other categories</p>
+        <h2>Keep browsing</h2>
+      </div>
+      <div class="cat-grid" id="related-reports"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <p class="foot-disclosure">StackScope aggregates publicly available pricing and sentiment data. We are not affiliated with, and do not receive payment from, any vendor listed. Reports are informational and are not a purchasing recommendation — always confirm current terms with the vendor directly.</p>
+    <nav class="foot-links">
+      <a href="../index.html#categories">Categories</a>
+      <a href="../index.html#methodology">Methodology</a>
+      <a href="../stackscope-about.html">About</a>
+      <a href="../stackscope-contact.html">Contact</a>
+      <a href="../stackscope-terms.html">Terms</a>
+      <a href="../stackscope-privacy.html">Privacy</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="../data-reports.js"></script>
+<script src="../stackscope-cards.js"></script>
+<script src="../stackscope-app.js"></script>
+<script>
+  // IMPORTANT: update "help-desk" to this report's own slug when you
+  // duplicate this template for a real category.
+  renderRelatedReports("#related-reports", "help-desk", 3);
+</script>
+</body>
+</html>
