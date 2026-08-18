@@ -13,16 +13,16 @@ const REPORTS = [
     title: "Help Desk Software",
     summary: "Zendesk, Freshdesk, Intercom, Help Scout — compared on seat cost and automation depth.",
     toolCount: 4,
-    live: false,
-    date: null
+    live: true,
+    date: "2026-08-18"
   },
   {
     slug: "project-management",
     title: "Project Management",
     summary: "Asana, Monday, ClickUp, Notion — from lightweight boards to enterprise portfolio suites.",
     toolCount: 4,
-    live: false,
-    date: null
+    live: true,
+    date: "2026-08-18"
   },
   {
     slug: "email-marketing",
