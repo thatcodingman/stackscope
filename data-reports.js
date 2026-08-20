@@ -1,13 +1,20 @@
 // StackScope — Category reports data
-// CRM is currently built directly into index.html (the original demo),
-// not through this template system yet. Everything below is the next
-// wave — add real reports here as they get published.
+// All published reports live here now, including CRM as of the
+// reports/crm-software.html migration.
 //
 // To publish: copy reports/_template.html to reports/your-category.html,
 // fill it in, then set that entry's "live" to true, "slug" to match
 // your filename (without .html), and "date" to the real publish date.
 
 const REPORTS = [
+  {
+    slug: "crm-software",
+    title: "CRM Software",
+    summary: "HubSpot, Salesforce, Pipedrive, Zoho — pricing tiers and sentiment compared.",
+    toolCount: 4,
+    live: true,
+    date: "2026-08-20"
+  },
   {
     slug: "help-desk",
     title: "Help Desk Software",
