@@ -25,14 +25,12 @@ const REPORTS = [
     date: "2026-08-18"
   },
   {
-    {
-      slug: "email-marketing",
-      title: "Email Marketing",
-      summary: "Mailchimp, Klaviyo, ActiveCampaign, Kit — compared on list-size pricing curves.",
-      toolCount: 4,
-      live: true,
-      date: "2026-08-20"
-    },
+    slug: "email-marketing",
+    title: "Email Marketing",
+    summary: "Mailchimp, Klaviyo, ActiveCampaign, Kit — compared on list-size pricing curves.",
+    toolCount: 4,
+    live: true,
+    date: "2026-08-20"
   },
   {
     slug: "payroll-hr",
