@@ -1,0 +1,202 @@
+<!--
+  STACKSCOPE — CATEGORY REPORT TEMPLATE
+  =======================================
+  Same sourcing standard as the CRM report on the homepage:
+  aggregate → cross-check against 3+ sources → sentiment scan →
+  re-verify on a schedule. Never fabricate a quote or a price.
+
+  How to publish a new report:
+  1. Copy this file to reports/your-category.html
+  2. Fill in the real tools, prices, and sentiment (verify every
+     price against the vendor's own pricing page + 2 more sources).
+     Show BOTH annual and monthly billing prices in the note line
+     for each tier — don't drop the monthly figure. Lead each
+     sentiment cell with a bolded one-line "Catch:" summary —
+     the most consistently reported weakness OR cost caveat, not
+     necessarily a literal complaint — before the fuller context.
+  3. Qualify "Best value" if it's not unconditionally true (e.g.
+     "Best value (paid)" if a cheaper tool has a real free plan).
+     Distinguish a genuine ongoing free plan from a time-limited
+     trial/program in the Free plan column — don't group them.
+  4. In ../data-reports.js, set that entry's "live" to true, "slug"
+     to match your filename (without .html), and "date" to today
+  5. Update the renderRelatedReports(...) slug near the bottom of
+     this file to match your own slug
+  6. Update the category card on the homepage (index.html) to link
+     here instead of "#"
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scheduling Software — Full Comparison — StackScope</title>
+<meta name="description" content="Calendly, Acuity Scheduling, SavvyCal, and YouCanBookMe compared on pricing, free plans, capacity, and aggregated sentiment — sourced from public data, no vendor bias.">
+<link rel="canonical" href="https://usestackscope.com/reports/scheduling.html">
+<meta property="og:title" content="Scheduling Software — Full Comparison — StackScope">
+<meta property="og:type" content="article">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="../stackscope-styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="logo"><span class="bracket">[</span>StackScope<span class="bracket">]</span></a>
+    <nav class="main-nav">
+      <a href="../index.html#categories">Categories</a>
+      <a href="../index.html#categories">Reports</a>
+      <a href="../index.html#methodology">Methodology</a>
+      <a href="../stackscope-about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap" style="padding-top: 36px;">
+    <p style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--ink-soft);">
+      <a href="../index.html" style="color: var(--ink-soft);">Home</a> /
+      <a href="../index.html#categories" style="color: var(--ink-soft);">Categories</a> /
+      Scheduling Software
+    </p>
+  </div>
+
+  <section class="section" style="padding-top: 12px;">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Live report</p>
+        <h2>Scheduling software — full comparison</h2>
+        <p><b>The four tools here don't scale on the same axis — that's the central thing to know before reading the prices below.</b> Calendly and SavvyCal price per seat/user. Acuity Scheduling prices per account with calendar limits baked into each named tier, not per seat. YouCanBookMe switches mid-lineup: its Individual and Professional tiers price per calendar connection, its Teams tier switches to per member. Every cell below states which model applies — don't assume the numbers scale the same way just because they sit in the same column.</p>
+      </div>
+
+      <div class="report-card">
+        <div class="report-toolbar">
+          <span>4 tools · Scheduling software</span>
+          <span>Last verified: August 2026</span>
+        </div>
+        <div class="table-scroll">
+          <table class="compare">
+            <thead>
+              <tr>
+                <th data-sort="text">Tool</th>
+                <th data-sort="text">Free plan</th>
+                <th data-sort="text">Paid-tier capacity constraint</th>
+                <th data-sort="number">1 seat/unit</th>
+                <th data-sort="number">5 seats/units</th>
+                <th data-sort="number">20 seats/units</th>
+                <th data-sort="text">Aggregated sentiment</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tool-name">Calendly</td>
+                <td>Yes — ongoing Free plan: 1 user, 1 event type, 1 connected calendar. [VENDOR]<span class="note">Biggest missing capability: unlimited event types / multiple calendars are paid. [VENDOR]</span></td>
+                <td>Standard: 1 user.<span class="note">[VENDOR] No separate contact/booking-volume cap identified in the pricing material reviewed</span></td>
+                <td data-value="10"><span class="price">$10/mo annual</span><span class="note">[VENDOR] Standard, per seat · $12/mo billed monthly</span></td>
+                <td data-value="50"><span class="price">$50/mo annual</span><span class="note">[DERIVED — VENDOR] Standard × 5 seats · $60/mo billed monthly</span></td>
+                <td data-value="200"><span class="price">$200/mo annual</span><span class="note">[DERIVED — VENDOR] Standard × 20 seats · $240/mo billed monthly</span></td>
+                <td class="sentiment"><b>Catch: Advanced team/routing features are gated above Standard.</b> PRAISE: Reviews consistently praise ease of use, calendar integration, and eliminating scheduling back-and-forth. [3P — G2] CATCH: Reviewers repeatedly flag higher-tier gating/expense for advanced team features. [3P — G2] AI: Calendly's current AI features are not shown as a separately priced add-on in the vendor docs reviewed. [VENDOR]</td>
+              </tr>
+              <tr>
+                <td class="tool-name">Acuity Scheduling</td>
+                <td>No ongoing free plan — 7-day trial only. [VENDOR]<span class="note">Trial is not a permanent free tier. Biggest missing capability vs paid Starter: continued booking after trial. [VENDOR]</span></td>
+                <td>Starter: 1 calendar. Standard: 6 calendars. Premium: 36 calendars.<span class="note">[VENDOR] At the limit, move to a higher plan — no overage fee identified, just a hard cap per tier</span></td>
+                <td data-value="16"><span class="price"><b>[ACCOUNT-BASED, not per-seat]</b> $16/mo annual</span><span class="note">[VENDOR] Starter · 1 calendar included · $20/mo billed monthly. "1 seat" here means the plan needed for 1 calendar, not a per-user rate</span></td>
+                <td data-value="27"><span class="price"><b>[ACCOUNT-BASED, not per-seat]</b> $27/mo annual</span><span class="note">[VENDOR] Standard, 6 calendars included · $34/mo billed monthly. Starter (1 calendar) doesn't stretch to 5 — this is the tier actually needed</span></td>
+                <td data-value="49"><span class="price"><b>[ACCOUNT-BASED, not per-seat]</b> $49/mo annual</span><span class="note">[VENDOR] Premium, 36 calendars included · $61/mo billed monthly — the tier needed for a 20-calendar team. Also Acuity's top public tier; Enterprise beyond this is custom/Contact Sales with no public price</span></td>
+                <td class="sentiment"><b>Catch: Entry plan's one-calendar limit forces an upgrade for multi-calendar teams.</b> PRAISE: Reviews consistently praise customization, scheduling efficiency, and integrations. [3P — G2] CATCH: Reviewers repeatedly mention an unintuitive interface/learning curve and limited reporting. [3P — G2/Capterra] AI: No separately priced AI add-on was identified in current vendor pricing/features material. [VENDOR]</td>
+              </tr>
+              <tr>
+                <td class="tool-name">SavvyCal</td>
+                <td>No ongoing free tier; current vendor page offers a free try and 30-day money-back guarantee. [VENDOR]<span class="note">No permanent free booking tier is shown on the current pricing page. [VENDOR]</span></td>
+                <td>Basic/Premium are both user-based.<span class="note">[VENDOR] No separate project/booking-volume cap identified in the pricing material reviewed</span></td>
+                <td data-value="10"><span class="price">$10/mo annual</span><span class="note">[VENDOR] Basic, per seat · $12/mo billed monthly [3P — Capterra]</span></td>
+                <td data-value="50"><span class="price">$50/mo annual</span><span class="note">[DERIVED — VENDOR] Basic × 5 seats · $60/mo billed monthly [DERIVED — 3P — Capterra, since the monthly base rate itself is Capterra-sourced]</span></td>
+                <td data-value="200"><span class="price">$200/mo annual</span><span class="note">[DERIVED — VENDOR] Basic × 20 seats · $240/mo billed monthly [DERIVED — 3P — Capterra]</span></td>
+                <td class="sentiment"><b>Catch: Pricing can feel high for solo users, with no permanent free tier.</b> PRAISE: Reviewers praise the calendar-overlay experience, UX, and flexible availability controls. [3P — G2] CATCH: G2 specifically identifies pricing as the main negative theme in its small review sample. [3P — G2] AI: No separately priced AI add-on identified in current vendor pricing/features material. [VENDOR]</td>
+              </tr>
+              <tr>
+                <td class="tool-name">YouCanBookMe</td>
+                <td>Yes — ongoing Free plan: 1 calendar connection and 1 booking page. [VENDOR]<span class="note">Biggest missing capability: additional calendars/booking pages and higher-tier customization/team features. [VENDOR]</span></td>
+                <td>Individual: 2 calendars/2 booking pages. Professional: 6/6. Teams: member-based, not calendar-capped.<span class="note">[VENDOR] The unit itself changes at Teams — see the 20-unit column note</span></td>
+                <td data-value="8.1"><span class="price">$8.10/mo annual</span><span class="note">[VENDOR] Individual, per calendar connection · $9/mo billed monthly · 2 calendar connections/booking pages included</span></td>
+                <td data-value="11.7"><span class="price">$11.70/mo annual</span><span class="note">[VENDOR] Professional, per calendar connection · $13/mo billed monthly · 6 calendar connections/booking pages included. Still per-calendar, not per-member</span></td>
+                <td data-value="324"><span class="price"><b>[UNIT CHANGE — per member, not per calendar]</b> $324/mo annual</span><span class="note">[DERIVED — VENDOR] Teams, 20 members × $16.20/mo annual · $360/mo billed monthly (20 × $18). Individual and Professional above price per calendar connection; Teams switches to per member — not a continuation of the same curve. Enterprise beyond 50 members is Contact Sales. [VENDOR] API and Round Robin routing are gated to this Team tier specifically, not Professional [3P — meetergo]</span></td>
+                <td class="sentiment"><b>Catch: Free/entry tiers constrain calendars and booking pages, while advanced customization takes more setup or higher tiers.</b> PRAISE: Reviews consistently praise ease of use, calendar integration, and eliminating scheduling back-and-forth. [3P — G2] CATCH: Reviewers repeatedly mention limited customization on lower tiers and a learning curve for advanced rules. [3P — G2] AI: No separately priced AI add-on identified in current vendor pricing/documentation. [VENDOR]</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="report-footnote">Figures are current published list prices checked in August 2026. [VENDOR] Per-seat tools (Calendly, SavvyCal) show real per-seat arithmetic at each breakpoint, labeled [DERIVED — VENDOR]. Acuity's cells show the actual plan needed for that many calendars, not a multiplied per-seat rate. YouCanBookMe's 1/5-unit columns are per-calendar; its 20-unit column switches to per-member, flagged explicitly. Review sentiment is paraphrased from current G2/Capterra review data. Confirm current pricing directly with each vendor before purchasing. This is not a recommendation to buy any specific product.</p>
+
+        <p class="report-footnote" style="border-top: none; margin-top: -6px;"><b>Top public tier (name + price, not forced into the 20-unit column above since it doesn't apply cleanly to every tool):</b> Calendly — Enterprise, Contact Sales, public starting price $15,000/year [VENDOR]. Acuity — Premium, $49/mo annual ($61/mo monthly), 36 calendars; Enterprise beyond this is custom/Contact Sales [VENDOR]. SavvyCal — Premium, $17/mo annual-billing view ($20/mo monthly); only 2 named public tiers exist, no Contact Sales-only tier [VENDOR]. YouCanBookMe — Teams, $16.20/member/mo annual ($18/mo monthly); Enterprise over 50 members is Contact Sales [VENDOR].</p>
+
+        <div class="sources-list">
+          <h4>Sources checked</h4>
+          <div class="group">
+            <span class="group-label">Calendly</span>
+            <a href="https://calendly.com/pricing" target="_blank" rel="noopener">Calendly — Pricing</a>
+            <a href="https://www.capterra.com/p/148036/Calendly/pricing/" target="_blank" rel="noopener">Capterra — Calendly Pricing</a>
+            <a href="https://www.g2.com/products/calendly/reviews" target="_blank" rel="noopener">G2 — Calendly Reviews</a>
+          </div>
+          <div class="group">
+            <span class="group-label">Acuity Scheduling</span>
+            <a href="https://acuityscheduling.com/pricing" target="_blank" rel="noopener">Acuity Scheduling — Pricing</a>
+            <a href="https://www.capterra.com/p/191978/Acuity-Scheduling/pricing/" target="_blank" rel="noopener">Capterra — Acuity Scheduling Pricing</a>
+            <a href="https://www.g2.com/products/acuity-scheduling/reviews" target="_blank" rel="noopener">G2 — Acuity Scheduling Reviews</a>
+          </div>
+          <div class="group">
+            <span class="group-label">SavvyCal</span>
+            <a href="https://savvycal.com/pricing" target="_blank" rel="noopener">SavvyCal — Pricing</a>
+            <a href="https://www.capterra.com/p/235730/SavvyCal/" target="_blank" rel="noopener">Capterra — SavvyCal</a>
+            <a href="https://www.g2.com/products/savvycal/reviews" target="_blank" rel="noopener">G2 — SavvyCal Reviews</a>
+          </div>
+          <div class="group">
+            <span class="group-label">YouCanBookMe</span>
+            <a href="https://youcanbook.me/pricing" target="_blank" rel="noopener">YouCanBookMe — Pricing</a>
+            <a href="https://support.youcanbook.me/hc/en-us/articles/17321826442007-YouCanBookMe-Pricing" target="_blank" rel="noopener">YouCanBookMe Help — Pricing</a>
+            <a href="https://meetergo.com/en/magazine/youcanbookme-review" target="_blank" rel="noopener">Meetergo — independent pricing cross-check (confirms $16.20/member Team pricing and the API/Round Robin gating)</a>
+            <a href="https://www.g2.com/products/youcanbookme/reviews" target="_blank" rel="noopener">G2 — YouCanBookMe Reviews</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Other categories</p>
+        <h2>Keep browsing</h2>
+      </div>
+      <div class="cat-grid" id="related-reports"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <p class="foot-disclosure">StackScope aggregates publicly available pricing and sentiment data. We are not affiliated with, and do not receive payment from, any vendor listed. Reports are informational and are not a purchasing recommendation — always confirm current terms with the vendor directly.</p>
+    <nav class="foot-links">
+      <a href="../index.html#categories">Categories</a>
+      <a href="../index.html#methodology">Methodology</a>
+      <a href="../stackscope-about.html">About</a>
+      <a href="../stackscope-contact.html">Contact</a>
+      <a href="../stackscope-terms.html">Terms</a>
+      <a href="../stackscope-privacy.html">Privacy</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="../data-reports.js"></script>
+<script src="../stackscope-cards.js"></script>
+<script src="../stackscope-app.js"></script>
+<script>
+  // IMPORTANT: update "help-desk" to this report's own slug when you
+  // duplicate this template for a real category.
+  renderRelatedReports("#related-reports", "scheduling", 3);
+</script>
+</body>
+</html>
