@@ -40,6 +40,14 @@ const REPORTS = [
     date: "2026-08-20"
   },
   {
+    slug: "e-signature",
+    title: "E-Signature Software",
+    summary: "DocuSign, PandaDoc, Dropbox Sign, SignNow — compared on seat pricing and send limits.",
+    toolCount: 4,
+    live: true,
+    date: "2026-08-20"
+  },
+  {
     slug: "payroll-hr",
     title: "Payroll & HR",
     summary: "Gusto, Rippling, ADP, Justworks — per-employee pricing and compliance coverage.",
