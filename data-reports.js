@@ -48,6 +48,22 @@ const REPORTS = [
     date: "2026-08-20"
   },
   {
+    slug: "scheduling",
+    title: "Scheduling Software",
+    summary: "Calendly, Acuity, SavvyCal, YouCanBookMe — compared on per-seat and per-calendar pricing.",
+    toolCount: 4,
+    live: true,
+    date: "2026-08-21"
+  },
+  {
+    slug: "design-tools",
+    title: "Design & Prototyping Tools",
+    summary: "Figma, Framer, Sketch, Canva — compared on seat pricing and free-plan limits.",
+    toolCount: 4,
+    live: true,
+    date: "2026-08-21"
+  },
+  {
     slug: "payroll-hr",
     title: "Payroll & HR",
     summary: "Gusto, Rippling, ADP, Justworks — per-employee pricing and compliance coverage.",
