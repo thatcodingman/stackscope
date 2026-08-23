@@ -76,8 +76,8 @@ const REPORTS = [
     title: "Accounting Software",
     summary: "QuickBooks, Xero, FreshBooks, Wave — tier limits and add-on costs compared.",
     toolCount: 4,
-    live: false,
-    date: null
+    live: true,
+    date: "2026-08-22"
   }
 ];
 
