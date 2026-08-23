@@ -68,8 +68,8 @@ const REPORTS = [
     title: "Payroll & HR",
     summary: "Gusto, Rippling, ADP, Justworks — per-employee pricing and compliance coverage.",
     toolCount: 4,
-    live: false,
-    date: null
+    live: true,
+    date: "2026-08-21"
   },
   {
     slug: "accounting",
