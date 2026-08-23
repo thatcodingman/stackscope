@@ -1,0 +1,147 @@
+<!--
+  STACKSCOPE — CATEGORY REPORT TEMPLATE
+  =======================================
+  Same sourcing standard as the CRM report on the homepage:
+  aggregate → cross-check against 3+ sources → sentiment scan →
+  re-verify on a schedule. Never fabricate a quote or a price.
+
+  How to publish a new report:
+  1. Copy this file to reports/your-category.html
+  2. Fill in the real tools, prices, and sentiment (verify every
+     price against the vendor's own pricing page + 2 more sources).
+     Show BOTH annual and monthly billing prices in the note line
+     for each tier — don't drop the monthly figure. Lead each
+     sentiment cell with a bolded one-line "Catch:" summary —
+     the most consistently reported weakness OR cost caveat, not
+     necessarily a literal complaint — before the fuller context.
+  3. Qualify "Best value" if it's not unconditionally true (e.g.
+     "Best value (paid)" if a cheaper tool has a real free plan).
+     Distinguish a genuine ongoing free plan from a time-limited
+     trial/program in the Free plan column — don't group them.
+  4. In ../data-reports.js, set that entry's "live" to true, "slug"
+     to match your filename (without .html), and "date" to today
+  5. Update the renderRelatedReports(...) slug near the bottom of
+     this file to match your own slug
+  6. Update the category card on the homepage (index.html) to link
+     here instead of "#"
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payroll &amp; HR Software — Full Comparison — StackScope</title>
+<meta name="description" content="Gusto, Rippling, ADP, and Justworks compared on payroll pricing, HR features, and aggregated sentiment — sourced from public data, no vendor bias.">
+<link rel="canonical" href="https://usestackscope.com/reports/payroll-hr.html">
+<meta property="og:title" content="Payroll &amp; HR Software — Full Comparison — StackScope">
+<meta property="og:type" content="article">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="../stackscope-styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="logo"><span class="bracket">[</span>StackScope<span class="bracket">]</span></a>
+    <nav class="main-nav">
+      <a href="../index.html#categories">Categories</a>
+      <a href="../index.html#categories">Reports</a>
+      <a href="../index.html#methodology">Methodology</a>
+      <a href="../stackscope-about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap" style="padding-top: 36px;">
+    <p style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--ink-soft);">
+      <a href="../index.html" style="color: var(--ink-soft);">Home</a> /
+      <a href="../index.html#categories" style="color: var(--ink-soft);">Categories</a> /
+      Payroll &amp; HR Software
+    </p>
+  </div>
+
+  <section class="section" style="padding-top: 12px;">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Live report</p>
+        <h2>Payroll &amp; HR software — full comparison</h2>
+        <p>Payroll pricing varies by platform model: per-employee SaaS, modular HR/payroll, or PEO. Monthly prices are shown where public; annual figures are annualized monthly equivalents unless a separate annual-billing price is published.</p>
+        <p><b>Pricing model:</b> Gusto — published base fee + per-employee SaaS pricing. Rippling — modular SaaS; only the core HR platform has a published starting price, and actual Payroll pricing is quote-dependent. ADP — fully sales-quoted payroll, no public list price at any tier. Justworks — Payroll uses published base + per-employee pricing; PEO Basic/Plus are a separate co-employment model, not a pricier tier of the same product.</p>
+      </div>
+
+      <div class="report-card">
+        <div class="report-toolbar">
+          <span>4 tools · Payroll &amp; HR software</span>
+          <span>Last verified: August 2026</span>
+        </div>
+        <div class="table-scroll">
+          <table class="compare">
+            <thead>
+              <tr>
+                <th data-sort="text">Tool</th>
+                <th data-sort="text">Free plan</th>
+                <th data-sort="number">Entry tier</th>
+                <th data-sort="number">Mid tier</th>
+                <th data-sort="number">Top tier / public price</th>
+                <th data-sort="text">Aggregated sentiment</th>
+              </tr>
+            </thead>
+            <tbody>
+<tr><td class="tool-name">Gusto</td><td><b>No ongoing free plan — free period ends when the first payroll is run.</b> [VENDOR] Simple is single-state; multi-state requires Plus/Premium. [VENDOR]</td><td data-value="49"><span class="price">$49/mo + $6/person</span><span class="note">Simple · [VENDOR]. 5 employees — Monthly: $79; Annualized equivalent: $948; separate annual-billing list price: not published. 20 employees — Monthly: $169; Annualized equivalent: $2,028; separate annual-billing list price: not published. 50 employees — Monthly: $349; Annualized equivalent: $4,188; separate annual-billing list price: not published. [DERIVED — VENDOR] $49 + $6×employees.</span></td><td data-value="80"><span class="price">$80/mo + $12/person</span><span class="note">Plus · [VENDOR] public price; multi-state payroll. Separate annual-billing list price: not published.</span></td><td data-value="180"><span class="price">$180/mo + $22/person</span><span class="note">Premium · [VENDOR] public price; dedicated support and advanced HR. Separate annual-billing list price: not published.</span></td><td class="sentiment"><b>Catch: [3P — G2 + Capterra] Support responsiveness and scaling costs are recurring concerns.</b> Review sentiment from G2 and Capterra; praise centers on ease of use and setup. <b>Capacity:</b> [VENDOR] Simple supports one state; additional-state payroll requires a paid add-on/upgrade, with price varying by state. <b>AI:</b> Gus is available on the platform; price and Simple-tier-specific availability are not publicly confirmed. [VENDOR]</td></tr>
+<tr><td class="tool-name">Rippling</td><td><b>No permanent free plan — trial/promotion only.</b> [VENDOR] Current pricing page routes to custom quote for full configurations. [VENDOR]</td><td><span class="price">Quote required for Payroll</span><span class="note">[VENDOR] Rippling does not publish a self-serve Payroll price. The core HR platform (Unity) has a widely corroborated starting figure — $35/mo base + $8/employee — but that is not the Payroll price; see footnote below the table for the full breakdown and the disputed Payroll add-on figures.</span></td><td>Modular — no named mid tier<span class="note">[VENDOR] Additional modules (benefits, time tracking, IT) are priced separately; module-level rate card is not public</span></td><td>No public top-tier price<span class="note">[VENDOR] Full multi-module configurations route to custom quote</span></td><td class="sentiment"><b>Catch: [3P — G2 + Capterra] Modular add-ons can raise cost and the breadth of features can create a learning curve.</b> Review sentiment from G2 and Capterra; praise centers on unified HR/payroll, automation and intuitive workflows. <b>Capacity:</b> [VENDOR] Supports multi-state U.S. payroll and employee/contractor payroll; no public numeric cap found in current vendor documentation. <b>AI:</b> AI availability on the payroll configuration cannot be confirmed from the public pricing documentation. [VENDOR]</td></tr>
+<tr><td class="tool-name">ADP</td><td><b>No ongoing free plan.</b> [VENDOR] Current RUN page advertises 3 months free on eligible packages; this is a promotion, not a permanent free tier.</td><td><span class="price">Get pricing</span><span class="note">Essential Payroll · [VENDOR] public tier, no list price. 5/20/50 monthly and annual: <b>quote required</b>; do not estimate. Current 3-month-free promotion is separate from standard price.</span></td><td><span class="price">Get pricing</span><span class="note">Enhanced Payroll · [VENDOR] public tier; quote required.</span></td><td><span class="price">Contact Sales</span><span class="note">HR Pro Payroll &amp; HR — Contact Sales / no public list price. [VENDOR]</span></td><td class="sentiment"><b>Catch: [3P — G2 + Capterra] Some reviewers report occasional slowdowns, wait times and navigation friction; public price transparency is also limited.</b> Review sentiment from G2 and Capterra; praise centers on ease of use, payroll processing, reporting and support. <b>Capacity:</b> [VENDOR] Essential includes multi-jurisdiction payroll and tax filing; no public state-count cap shown. <b>AI:</b> [VENDOR] ADP Assist virtual assistant, payroll inspector and smart timesheet import are included in Essential; no separate AI price published.</td></tr>
+<tr><td class="tool-name">Justworks</td><td><b>No ongoing free plan publicly listed.</b> [VENDOR] Current pricing page lists paid Payroll, PEO Basic, PEO Plus and EOR.</td><td data-value="8"><span class="price">$8/mo/employee + $50 base</span><span class="note">Payroll · [VENDOR]. 5 employees — Monthly: $90; Annualized equivalent: $1,080; separate annual-billing list price: not published. 20 employees — Monthly: $210; Annualized equivalent: $2,520; separate annual-billing list price: not published. 50 employees — Monthly: $450; Annualized equivalent: $5,400; separate annual-billing list price: not published. [DERIVED — VENDOR] $50 + $8×employees. <b>Important: PEO Basic/Plus below are NOT pricier tiers of Payroll — they're a separate co-employment model bundling benefits access, not a feature upgrade path.</b></span></td><td data-value="79"><span class="price">$79/mo/employee</span><span class="note">Alternative model: PEO Basic (not a Payroll upgrade) · [VENDOR]. 5 employees — Monthly: $395; Annualized equivalent: $4,740. 20 employees — Monthly: $1,580; Annualized equivalent: $18,960. 50 employees — Monthly: $3,950; Annualized equivalent: $47,400. [DERIVED — VENDOR] Separate annual-billing list price: not published.</span></td><td data-value="124"><span class="price">$124/mo/employee</span><span class="note">Alternative model: PEO Plus · [VENDOR] public price; benefits administration included. EOR is separate at $599/employee/mo.</span></td><td class="sentiment"><b>Catch: [3P — G2 + Capterra] Reviewers cite limited reporting/customization and some benefits/pricing limitations.</b> Review sentiment from G2 and Capterra; praise centers on simple HR/payroll administration and support. <b>Capacity:</b> [VENDOR] Payroll includes multi-state payroll and contractor payments; PEO tiers add compliance, HR and benefits — no public numeric cap found in current vendor documentation. <b>AI:</b> No AI add-on found — no separate price published, no included AI feature identified on current pricing/product pages. [VENDOR]</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="report-footnote">Vendor pricing pages and third-party review sources were checked in August 2026; unresolved vendor pricing conflicts are labeled explicitly. Where vendors publish only “Get pricing” or a custom quote, no breakpoint estimate is supplied. Annualized figures are 12 × the published monthly amount and are not separate annual-billing prices. Confirm current pricing directly with each vendor before purchasing. This is not a recommendation to buy any specific product.</p>
+
+        <p class="report-footnote" style="border-top: none; margin-top: -6px;"><b>Rippling pricing detail:</b> Rippling's core HR platform (Unity) has a widely corroborated starting price of $35/mo base + $8/employee/mo [VENDOR — Rippling's own blog, cross-checked against 8 independent 2026 sources] — but this is the base platform, not Payroll specifically. Rippling's own pages give conflicting figures for the Payroll module add-on: one states $35/user/mo, another states $8/employee/mo on top of the base platform. <b>[VENDOR — disputed, Rippling's own pages give conflicting figures — NOT usable for breakpoint pricing.]</b> We could not resolve which figure is current or whether they describe different configurations. Treat Rippling's real payroll cost as quote-dependent until you have a vendor-confirmed number for your specific setup.</p>
+
+        <div class="sources-list">
+          <h4>Sources checked</h4>
+          <div class="group"><span class="group-label">Gusto</span><a href="https://gusto.com/product/pricing" target="_blank" rel="noopener">Gusto Pricing</a><a href="https://www.g2.com/products/gusto/reviews" target="_blank" rel="noopener">G2 — Gusto Reviews</a><a href="https://www.capterra.com/p/131882/Gusto/reviews/" target="_blank" rel="noopener">Capterra — Gusto Reviews</a></div>
+          <div class="group"><span class="group-label">Rippling</span><a href="https://www.rippling.com/pricing" target="_blank" rel="noopener">Rippling Pricing</a><a href="https://www.rippling.com/blog/rippling-payroll-review" target="_blank" rel="noopener">Rippling — Payroll Review &amp; Pricing (contains the disputed $35/user vs $8/employee Payroll figures)</a><a href="https://www.forbes.com/advisor/business/software/rippling-pricing/" target="_blank" rel="noopener">Forbes Advisor — Rippling Pricing</a><a href="https://www.gloroots.com/blog/rippling-price" target="_blank" rel="noopener">Gloroots — Rippling Pricing</a><a href="https://www.pin.com/blog/rippling-pricing/" target="_blank" rel="noopener">Pin — Rippling Pricing</a><a href="https://peoplemanagingpeople.com/tools/rippling-pricing/" target="_blank" rel="noopener">People Managing People — Rippling Pricing</a><a href="https://cloudappcritic.com/human-resources/rippling-pricing/" target="_blank" rel="noopener">CloudAppCritic — Rippling Pricing</a><a href="https://www.ignitionbenefits.com/blog/rippling-pricing" target="_blank" rel="noopener">Ignition Benefits — Rippling Pricing</a><a href="https://www.hireinsouth.com/post/rippling-pricing" target="_blank" rel="noopener">Hire in South — Rippling Pricing</a><a href="https://www.vendr.com/marketplace/rippling" target="_blank" rel="noopener">Vendr — Rippling Marketplace Data</a><a href="https://www.g2.com/products/rippling/reviews" target="_blank" rel="noopener">G2 — Rippling Reviews</a><a href="https://www.capterra.com/p/172127/Rippling/reviews/" target="_blank" rel="noopener">Capterra — Rippling Reviews</a></div>
+          <div class="group"><span class="group-label">ADP</span><a href="https://www.adp.com/what-we-offer/payroll/payroll-for-1-49-employees/payroll-packages.aspx" target="_blank" rel="noopener">ADP RUN Payroll Packages</a><a href="https://www.g2.com/products/run-powered-by-adp/reviews" target="_blank" rel="noopener">G2 — RUN Powered by ADP Reviews</a><a href="https://www.capterra.com/p/185859/RUN/reviews/" target="_blank" rel="noopener">Capterra — RUN Powered by ADP Reviews</a></div>
+          <div class="group"><span class="group-label">Justworks</span><a href="https://www.justworks.com/pricing" target="_blank" rel="noopener">Justworks Pricing</a><a href="https://help.justworks.com/hc/en-us/articles/360004481791-Pricing" target="_blank" rel="noopener">Justworks Help Center — Pricing</a><a href="https://www.g2.com/products/justworks/reviews" target="_blank" rel="noopener">G2 — Justworks Reviews</a><a href="https://www.capterra.com/p/223913/Justworks/reviews/" target="_blank" rel="noopener">Capterra — Justworks Reviews</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Other categories</p>
+        <h2>Keep browsing</h2>
+      </div>
+      <div class="cat-grid" id="related-reports"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <p class="foot-disclosure">StackScope aggregates publicly available pricing and sentiment data. We are not affiliated with, and do not receive payment from, any vendor listed. Reports are informational and are not a purchasing recommendation — always confirm current terms with the vendor directly.</p>
+    <nav class="foot-links">
+      <a href="../index.html#categories">Categories</a>
+      <a href="../index.html#methodology">Methodology</a>
+      <a href="../stackscope-about.html">About</a>
+      <a href="../stackscope-contact.html">Contact</a>
+      <a href="../stackscope-terms.html">Terms</a>
+      <a href="../stackscope-privacy.html">Privacy</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="../data-reports.js"></script>
+<script src="../stackscope-cards.js"></script>
+<script src="../stackscope-app.js"></script>
+<script>
+  renderRelatedReports("#related-reports", "payroll-hr", 3);
+</script>
+</body>
+</html>
