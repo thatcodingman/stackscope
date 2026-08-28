@@ -19,20 +19,90 @@
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://usestackscope.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Help Desk Software", "item": "https://usestackscope.com/reports/help-desk.html" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://usestackscope.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Help Desk Software",
+          "item": "https://usestackscope.com/reports/help-desk.html"
+        }
       ]
     },
     {
       "@type": "ItemList",
       "name": "Help Desk Software Comparison",
-      "description": "Zendesk, Freshdesk, Intercom, and Help Scout compared on pricing, features, and aggregated sentiment — sourced from public data, no vendor bias.",
+      "description": "Zendesk, Freshdesk, Intercom, and Help Scout compared on pricing, features, and aggregated sentiment \u2014 sourced from public data, no vendor bias.",
       "url": "https://usestackscope.com/reports/help-desk.html",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "item": { "@type": "SoftwareApplication", "name": "Zendesk", "applicationCategory": "BusinessApplication", "url": "https://www.zendesk.com/pricing/" } },
-        { "@type": "ListItem", "position": 2, "item": { "@type": "SoftwareApplication", "name": "Freshdesk", "applicationCategory": "BusinessApplication", "url": "https://www.freshworks.com/freshdesk/pricing/" } },
-        { "@type": "ListItem", "position": 3, "item": { "@type": "SoftwareApplication", "name": "Intercom", "applicationCategory": "BusinessApplication", "url": "https://www.intercom.com/pricing" } },
-        { "@type": "ListItem", "position": 4, "item": { "@type": "SoftwareApplication", "name": "Help Scout", "applicationCategory": "BusinessApplication", "url": "https://www.helpscout.com/pricing/" } }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Zendesk",
+            "applicationCategory": "BusinessApplication",
+            "url": "https://www.zendesk.com/pricing/",
+            "offers": {
+              "@type": "AggregateOffer",
+              "lowPrice": 19,
+              "highPrice": 115,
+              "priceCurrency": "USD"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Freshdesk",
+            "applicationCategory": "BusinessApplication",
+            "url": "https://www.freshworks.com/freshdesk/pricing/",
+            "offers": {
+              "@type": "AggregateOffer",
+              "lowPrice": 19,
+              "highPrice": 89,
+              "priceCurrency": "USD"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Intercom",
+            "applicationCategory": "BusinessApplication",
+            "url": "https://www.intercom.com/pricing",
+            "offers": {
+              "@type": "AggregateOffer",
+              "lowPrice": 29,
+              "highPrice": 132,
+              "priceCurrency": "USD"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Help Scout",
+            "applicationCategory": "BusinessApplication",
+            "url": "https://www.helpscout.com/pricing/",
+            "offers": {
+              "@type": "AggregateOffer",
+              "lowPrice": 25,
+              "highPrice": 75,
+              "priceCurrency": "USD"
+            }
+          }
+        }
       ]
     }
   ]

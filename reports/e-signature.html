@@ -19,20 +19,88 @@
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://usestackscope.com/" },
-        { "@type": "ListItem", "position": 2, "name": "E-Signature Software", "item": "https://usestackscope.com/reports/e-signature.html" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://usestackscope.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "E-Signature Software",
+          "item": "https://usestackscope.com/reports/e-signature.html"
+        }
       ]
     },
     {
       "@type": "ItemList",
       "name": "E-Signature Software Comparison",
-      "description": "DocuSign, PandaDoc, Dropbox Sign, and SignNow compared on pricing, send limits, free plans, and aggregated sentiment — sourced from public data, no vendor bias.",
+      "description": "DocuSign, PandaDoc, Dropbox Sign, and SignNow compared on pricing, send limits, free plans, and aggregated sentiment \u2014 sourced from public data, no vendor bias.",
       "url": "https://usestackscope.com/reports/e-signature.html",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "item": { "@type": "SoftwareApplication", "name": "DocuSign", "applicationCategory": "BusinessApplication", "url": "https://www.docusign.com/products/electronic-signature" } },
-        { "@type": "ListItem", "position": 2, "item": { "@type": "SoftwareApplication", "name": "PandaDoc", "applicationCategory": "BusinessApplication", "url": "https://www.pandadoc.com/pricing/" } },
-        { "@type": "ListItem", "position": 3, "item": { "@type": "SoftwareApplication", "name": "Dropbox Sign", "applicationCategory": "BusinessApplication", "url": "https://sign.dropbox.com/products/dropbox-sign/pricing" } },
-        { "@type": "ListItem", "position": 4, "item": { "@type": "SoftwareApplication", "name": "SignNow", "applicationCategory": "BusinessApplication", "url": "https://www.signnow.com/features/signnow-plans-and-pricing" } }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "DocuSign",
+            "applicationCategory": "BusinessApplication",
+            "url": "https://www.docusign.com/products/electronic-signature",
+            "offers": {
+              "@type": "Offer",
+              "price": 10,
+              "priceCurrency": "USD"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "PandaDoc",
+            "applicationCategory": "BusinessApplication",
+            "url": "https://www.pandadoc.com/pricing/",
+            "offers": {
+              "@type": "AggregateOffer",
+              "lowPrice": 19,
+              "highPrice": 380,
+              "priceCurrency": "USD"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Dropbox Sign",
+            "applicationCategory": "BusinessApplication",
+            "url": "https://sign.dropbox.com/products/dropbox-sign/pricing",
+            "offers": {
+              "@type": "Offer",
+              "price": 10.05,
+              "priceCurrency": "USD"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "SignNow",
+            "applicationCategory": "BusinessApplication",
+            "url": "https://www.signnow.com/features/signnow-plans-and-pricing",
+            "offers": {
+              "@type": "AggregateOffer",
+              "lowPrice": 8,
+              "highPrice": 160,
+              "priceCurrency": "USD"
+            }
+          }
+        }
       ]
     }
   ]

@@ -19,20 +19,89 @@
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://usestackscope.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Accounting Software", "item": "https://usestackscope.com/reports/accounting.html" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://usestackscope.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Accounting Software",
+          "item": "https://usestackscope.com/reports/accounting.html"
+        }
       ]
     },
     {
       "@type": "ItemList",
       "name": "Accounting Software Comparison",
-      "description": "QuickBooks Online, Xero, FreshBooks, and Wave compared on pricing, free plans, and aggregated sentiment — sourced from public data, no vendor bias.",
+      "description": "QuickBooks Online, Xero, FreshBooks, and Wave compared on pricing, free plans, and aggregated sentiment \u2014 sourced from public data, no vendor bias.",
       "url": "https://usestackscope.com/reports/accounting.html",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "item": { "@type": "SoftwareApplication", "name": "QuickBooks Online", "applicationCategory": "BusinessApplication", "url": "https://quickbooks.intuit.com/pricing/" } },
-        { "@type": "ListItem", "position": 2, "item": { "@type": "SoftwareApplication", "name": "Xero", "applicationCategory": "BusinessApplication", "url": "https://www.xero.com/us/pricing-plans/" } },
-        { "@type": "ListItem", "position": 3, "item": { "@type": "SoftwareApplication", "name": "FreshBooks", "applicationCategory": "BusinessApplication", "url": "https://www.freshbooks.com/pricing" } },
-        { "@type": "ListItem", "position": 4, "item": { "@type": "SoftwareApplication", "name": "Wave", "applicationCategory": "BusinessApplication", "url": "https://www.waveapps.com/pricing" } }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "QuickBooks Online",
+            "applicationCategory": "BusinessApplication",
+            "url": "https://quickbooks.intuit.com/pricing/",
+            "offers": {
+              "@type": "AggregateOffer",
+              "lowPrice": 38,
+              "highPrice": 340,
+              "priceCurrency": "USD"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Xero",
+            "applicationCategory": "BusinessApplication",
+            "url": "https://www.xero.com/us/pricing-plans/",
+            "offers": {
+              "@type": "AggregateOffer",
+              "lowPrice": 25,
+              "highPrice": 90,
+              "priceCurrency": "USD"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "FreshBooks",
+            "applicationCategory": "BusinessApplication",
+            "url": "https://www.freshbooks.com/pricing",
+            "offers": {
+              "@type": "AggregateOffer",
+              "lowPrice": 23,
+              "highPrice": 70,
+              "priceCurrency": "USD"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Wave",
+            "applicationCategory": "BusinessApplication",
+            "url": "https://www.waveapps.com/pricing",
+            "offers": {
+              "@type": "Offer",
+              "price": 19,
+              "priceCurrency": "USD"
+            }
+          }
+        }
       ]
     }
   ]
