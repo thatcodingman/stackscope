@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>StackScope — Report Updates</title>
+  <link>https://usestackscope.com/</link>
+  <description>Independent B2B software comparisons — new reports and corrections, sourced from public data and cross-checked, never vendor-paid.</description>
+  <language>en-us</language>
+  <atom:link href="https://usestackscope.com/rss.xml" rel="self" type="application/rss+xml"/>
+
+  <item>
+    <title>CRM Software Comparison — HubSpot, Salesforce, Pipedrive, Zoho</title>
+    <link>https://usestackscope.com/reports/crm-software.html</link>
+    <guid isPermaLink="true">https://usestackscope.com/reports/crm-software.html</guid>
+    <description>Migrated to the templated report system with pricing re-verified fresh — surfaced Pipedrive's 71% monthly-vs-annual markup and Zoho's 52% monthly penalty.</description>
+    <pubDate>Thu, 21 Aug 2026 12:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <title>Project Management Tools — Asana, Monday.com, ClickUp, Notion</title>
+    <link>https://usestackscope.com/reports/project-management.html</link>
+    <guid isPermaLink="true">https://usestackscope.com/reports/project-management.html</guid>
+    <description>Covers Asana's Nov 2025 free-tier seat cap change, ClickUp's public-vs-backend pricing distinction, and Notion's per-member block limits.</description>
+    <pubDate>Wed, 20 Aug 2026 12:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <title>Help Desk Software Comparison — Zendesk, Freshdesk, Intercom, Help Scout</title>
+    <link>https://usestackscope.com/reports/help-desk.html</link>
+    <guid isPermaLink="true">https://usestackscope.com/reports/help-desk.html</guid>
+    <description>Corrected billing-cycle mislabeling and a misapplied "Best value" badge; added full vendor-first sourcing.</description>
+    <pubDate>Tue, 19 Aug 2026 12:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <title>Email Marketing Software Comparison — Mailchimp, Klaviyo, ActiveCampaign, Kit</title>
+    <link>https://usestackscope.com/reports/email-marketing.html</link>
+    <guid isPermaLink="true">https://usestackscope.com/reports/email-marketing.html</guid>
+    <description>Independent pricing, feature, and sentiment comparison of leading email marketing platforms.</description>
+    <pubDate>Mon, 18 Aug 2026 12:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <title>E-Signature Software Comparison — DocuSign, PandaDoc, Dropbox Sign, SignNow</title>
+    <link>https://usestackscope.com/reports/e-signature.html</link>
+    <guid isPermaLink="true">https://usestackscope.com/reports/e-signature.html</guid>
+    <description>Independent pricing, feature, and sentiment comparison of leading e-signature platforms.</description>
+    <pubDate>Sun, 17 Aug 2026 12:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <title>Design &amp; Prototyping Tools — Figma, Framer, Sketch, Canva</title>
+    <link>https://usestackscope.com/reports/design-tools.html</link>
+    <guid isPermaLink="true">https://usestackscope.com/reports/design-tools.html</guid>
+    <description>Independent pricing, feature, and sentiment comparison of leading design and prototyping tools.</description>
+    <pubDate>Sat, 16 Aug 2026 12:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <title>Scheduling Software Comparison — Calendly, Acuity, SavvyCal, YouCanBookMe</title>
+    <link>https://usestackscope.com/reports/scheduling.html</link>
+    <guid isPermaLink="true">https://usestackscope.com/reports/scheduling.html</guid>
+    <description>Independent pricing, feature, and sentiment comparison of leading scheduling platforms.</description>
+    <pubDate>Fri, 15 Aug 2026 12:00:00 GMT</pubDate>
+  </item>
+
+</channel>
+</rss>
