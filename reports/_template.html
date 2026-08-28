@@ -24,6 +24,10 @@
      this file to match your own slug
   6. Update the category card on the homepage (index.html) to link
      here instead of "#"
+  7. Fill in the bracketed JSON-LD block in <head> below (category
+     name, slug, and the 4 tools' names + real pricing URLs), then
+     add this category to the ItemList in index.html's JSON-LD and
+     add a matching <item> to rss.xml
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -39,6 +43,34 @@
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="stylesheet" href="../stackscope-styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://usestackscope.com/" },
+        { "@type": "ListItem", "position": 2, "name": "[Category name]", "item": "https://usestackscope.com/reports/[category-slug].html" }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "name": "[Category name] Comparison",
+      "description": "[Tool 1], [Tool 2], [Tool 3], and [Tool 4] compared on pricing, features, and aggregated sentiment — sourced from public data, no vendor bias.",
+      "url": "https://usestackscope.com/reports/[category-slug].html",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "item": { "@type": "SoftwareApplication", "name": "[Tool 1 name]", "applicationCategory": "BusinessApplication", "url": "[Tool 1 official pricing URL]" } },
+        { "@type": "ListItem", "position": 2, "item": { "@type": "SoftwareApplication", "name": "[Tool 2 name]", "applicationCategory": "BusinessApplication", "url": "[Tool 2 official pricing URL]" } },
+        { "@type": "ListItem", "position": 3, "item": { "@type": "SoftwareApplication", "name": "[Tool 3 name]", "applicationCategory": "BusinessApplication", "url": "[Tool 3 official pricing URL]" } },
+        { "@type": "ListItem", "position": 4, "item": { "@type": "SoftwareApplication", "name": "[Tool 4 name]", "applicationCategory": "BusinessApplication", "url": "[Tool 4 official pricing URL]" } }
+      ]
+    }
+  ]
+}
+</script>
+<!-- Also add this category to the ItemList in index.html's own JSON-LD
+     block once it's live, and add a matching <item> to rss.xml. -->
 </head>
 <body>
 
