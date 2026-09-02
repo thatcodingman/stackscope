@@ -19,6 +19,7 @@
   --teal: #1f6f73;
   --line: #cfd5c6;
   --line-strong: #9aa393;
+  --grid-line: rgba(207, 213, 198, 0.87); /* ~13% softer than --line, used only for the body background grid */
 
   /* --- type tokens --- */
   --font-display: 'Space Grotesk', sans-serif;
@@ -45,8 +46,8 @@ body {
   font-size: 16px;
   line-height: 1.55;
   background-image:
-    linear-gradient(var(--line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
   background-size: 64px 64px;
   background-position: -1px -1px;
   background-attachment: fixed;

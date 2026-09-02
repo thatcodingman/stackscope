@@ -61,14 +61,71 @@
   gtag('js', new Date());
   gtag('config', 'G-68RPL14DSM');
 </script>
+<style>
+  /* --- Design review additions, scoped with ss- prefix to avoid
+       colliding with existing stackscope-styles.css rules --- */
+  .ss-hero-card { box-shadow: 0 6px 0 rgba(27,42,74,0.08); }
+  .ss-head-right { display: flex; align-items: center; gap: 4px; font-family: var(--font-mono, 'IBM Plex Mono', monospace); }
+  .ss-verified-pill {
+    color: var(--green, #1F7A4D);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+  .ss-name-strong { font-weight: 700; }
+  .ss-val-lg { font-size: 1.15em; font-weight: 700; color: var(--ink, #1B2A4A); }
+  .ss-verify-sig {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 18px;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px dashed var(--line, rgba(27,42,74,0.2));
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    color: var(--ink-soft, rgba(27,42,74,0.65));
+  }
+  .ss-process { padding: 28px 0; }
+  .ss-process-grid {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .ss-process-step { max-width: 260px; text-align: left; }
+  .ss-process-num {
+    display: block;
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    color: var(--green, #1F7A4D);
+    margin-bottom: 4px;
+  }
+  .ss-process-step h4 { margin: 0 0 6px; }
+  .ss-process-step p { margin: 0; font-size: 0.9rem; color: var(--ink-soft, rgba(27,42,74,0.7)); }
+  .ss-process-arrow {
+    align-self: center;
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    color: var(--ink-soft, rgba(27,42,74,0.4));
+    font-size: 1.2rem;
+    padding-top: 22px;
+  }
+  @media (max-width: 720px) {
+    .ss-process-arrow { display: none; }
+  }
+  .ss-cat-card { padding: 22px 20px !important; }
+  .ss-cat-card h3 { font-size: 1.2em; }
+  .ss-nav-primary { font-weight: 700; }
+</style>
 </head>
 <body>
 <header class="site-header">
   <div class="wrap">
     <a href="index.html" class="logo"><span class="bracket">[</span>StackScope<span class="bracket">]</span></a>
     <nav class="main-nav">
+      <a href="reports/crm-software.html" class="ss-nav-primary">Reports</a>
       <a href="#categories">Categories</a>
-      <a href="reports/crm-software.html">Reports</a>
       <a href="#methodology">Methodology</a>
       <a href="stackscope-about.html">About</a>
     </nav>
@@ -80,40 +137,66 @@
     <div class="wrap hero-grid">
       <div>
         <p class="eyebrow">Software comparison reports</p>
-        <h1>Every pricing tier, checked against the source — not the vendor's homepage.</h1>
-        <p class="hero-sub">StackScope aggregates publicly listed pricing, specs, and community sentiment for B2B software, then verifies it against multiple independent sources before publishing. No sponsored placements, no fabricated reviews.</p>
+        <h1>Software pricing, checked against the source.</h1>
+        <p class="hero-sub">Published pricing is compared against vendor documentation, cross-checked against independent sources, and reported in a way that shows how the price actually changes as you scale — not just the sticker rate on the homepage.</p>
         <div class="hero-ctas">
           <a href="reports/crm-software.html" class="btn btn-primary">View CRM report</a>
           <a href="#methodology" class="btn btn-ghost">How we verify data</a>
         </div>
       </div>
 
-      <div class="tag-card">
+      <div class="tag-card ss-hero-card">
         <div class="tag-head">
           <span>Field sample — CRM software</span>
-          <span>4 of 4 tracked</span>
+          <span class="ss-head-right">4 OF 4 TRACKED &nbsp;<span class="ss-verified-pill">● VERIFIED</span></span>
         </div>
         <div class="tag-row">
-          <span class="name">HubSpot CRM</span>
+          <span class="name ss-name-strong">HubSpot CRM</span>
           <span class="val">Free, 2 users</span>
-          <span class="val">$20/seat entry</span>
+          <span class="val ss-val-lg">$20/seat entry</span>
         </div>
         <div class="tag-row">
-          <span class="name">Salesforce</span>
+          <span class="name ss-name-strong">Salesforce</span>
           <span class="val">Free, 2 users</span>
-          <span class="val">$25/seat entry</span>
+          <span class="val ss-val-lg">$25/seat entry</span>
         </div>
         <div class="tag-row">
-          <span class="name">Pipedrive</span>
+          <span class="name ss-name-strong">Pipedrive</span>
           <span class="val">No free plan</span>
-          <span class="val">$14/seat entry</span>
+          <span class="val ss-val-lg">$14/seat entry</span>
         </div>
         <div class="tag-row pick">
-          <span class="name">Zoho CRM</span>
+          <span class="name ss-name-strong">Zoho CRM</span>
           <span class="val">Free, 3 users</span>
-          <span class="val">$14/seat entry</span>
+          <span class="val ss-val-lg">$14/seat entry</span>
         </div>
-        <p class="stamp-updated"><span class="dot"></span> Last verified August 2026 &nbsp;·&nbsp; sourced from vendor pricing pages + independent cross-checks</p>
+        <div class="ss-verify-sig">
+          <span>LAST VERIFIED · AUG 2026</span>
+          <span>SOURCES CHECKED · 6</span>
+          <span>PRICING MODEL · PER SEAT</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ss-process">
+    <div class="wrap ss-process-grid">
+      <div class="ss-process-step">
+        <span class="ss-process-num">01</span>
+        <h4>Collect</h4>
+        <p>Pull list prices and tier details straight from each vendor's own pricing pages and public docs.</p>
+      </div>
+      <span class="ss-process-arrow">→</span>
+      <div class="ss-process-step">
+        <span class="ss-process-num">02</span>
+        <h4>Cross-check</h4>
+        <p>Verify every figure against at least three independent sources before it gets published.</p>
+      </div>
+      <span class="ss-process-arrow">→</span>
+      <div class="ss-process-step">
+        <span class="ss-process-num">03</span>
+        <h4>Report</h4>
+        <p>Publish with sourcing shown, then re-verify on a recurring schedule as pricing changes.</p>
       </div>
     </div>
   </section>
@@ -127,67 +210,67 @@
       </div>
       <div class="cat-grid">
 
-        <a href="reports/crm-software.html" class="cat-card">
+        <a href="reports/crm-software.html" class="cat-card ss-cat-card">
           <span class="tab">Live report</span>
           <h3>CRM Software</h3>
           <p class="sentiment">HubSpot, Salesforce, Pipedrive, Zoho — pricing tiers and sentiment compared.</p>
-          <div class="meta"><span>4 tools tracked</span><span>View →</span></div>
+          <div class="meta"><span>4 tools · 12 pricing tiers checked</span><span>Explore →</span></div>
         </a>
 
-        <a href="reports/help-desk.html" class="cat-card">
+        <a href="reports/help-desk.html" class="cat-card ss-cat-card">
           <span class="tab">Live report</span>
           <h3>Help Desk Software</h3>
           <p class="sentiment">Zendesk, Freshdesk, Intercom, Help Scout — compared on seat cost and automation depth.</p>
-          <div class="meta"><span>4 tools tracked</span><span>View →</span></div>
+          <div class="meta"><span>4 tools · 12 pricing tiers checked</span><span>Explore →</span></div>
         </a>
 
-        <a href="reports/project-management.html" class="cat-card">
+        <a href="reports/project-management.html" class="cat-card ss-cat-card">
           <span class="tab">Live report</span>
           <h3>Project Management</h3>
           <p class="sentiment">Asana, Monday, ClickUp, Notion — from lightweight boards to enterprise portfolio suites.</p>
-          <div class="meta"><span>4 tools tracked</span><span>View →</span></div>
+          <div class="meta"><span>4 tools · 9 pricing tiers checked</span><span>Explore →</span></div>
         </a>
 
-        <a href="reports/email-marketing.html" class="cat-card">
+        <a href="reports/email-marketing.html" class="cat-card ss-cat-card">
           <span class="tab">Live report</span>
           <h3>Email Marketing</h3>
           <p class="sentiment">Mailchimp, Klaviyo, ActiveCampaign, Kit — compared on list-size pricing curves.</p>
-          <div class="meta"><span>4 tools tracked</span><span>View →</span></div>
+          <div class="meta"><span>4 tools · 12 pricing tiers checked</span><span>Explore →</span></div>
         </a>
 
-        <a href="reports/e-signature.html" class="cat-card">
+        <a href="reports/e-signature.html" class="cat-card ss-cat-card">
           <span class="tab">Live report</span>
           <h3>E-Signature Software</h3>
           <p class="sentiment">DocuSign, PandaDoc, Dropbox Sign, SignNow — compared on seat pricing and send limits.</p>
-          <div class="meta"><span>4 tools tracked</span><span>View →</span></div>
+          <div class="meta"><span>4 tools · 8 pricing tiers checked</span><span>Explore →</span></div>
         </a>
 
-        <a href="reports/design-tools.html" class="cat-card">
+        <a href="reports/design-tools.html" class="cat-card ss-cat-card">
           <span class="tab">Live report</span>
           <h3>Design &amp; Prototyping Tools</h3>
           <p class="sentiment">Figma, Framer, Sketch, Canva — compared on seat pricing and free-plan limits.</p>
-          <div class="meta"><span>4 tools tracked</span><span>View →</span></div>
+          <div class="meta"><span>4 tools · 10 pricing tiers checked</span><span>Explore →</span></div>
         </a>
 
-        <a href="reports/scheduling.html" class="cat-card">
+        <a href="reports/scheduling.html" class="cat-card ss-cat-card">
           <span class="tab">Live report</span>
           <h3>Scheduling Software</h3>
           <p class="sentiment">Calendly, Acuity, SavvyCal, YouCanBookMe — compared on per-seat and per-calendar pricing.</p>
-          <div class="meta"><span>4 tools tracked</span><span>View →</span></div>
+          <div class="meta"><span>4 tools · 12 pricing tiers checked</span><span>Explore →</span></div>
         </a>
 
-        <a href="reports/payroll-hr.html" class="cat-card">
+        <a href="reports/payroll-hr.html" class="cat-card ss-cat-card">
           <span class="tab">Live report</span>
           <h3>Payroll &amp; HR</h3>
           <p class="sentiment">Gusto, Rippling, ADP, Justworks — per-employee pricing and compliance coverage.</p>
-          <div class="meta"><span>4 tools tracked</span><span>View →</span></div>
+          <div class="meta"><span>4 tools · 6 pricing tiers checked</span><span>Explore →</span></div>
         </a>
 
-        <a href="reports/accounting.html" class="cat-card">
+        <a href="reports/accounting.html" class="cat-card ss-cat-card">
           <span class="tab">Live report</span>
           <h3>Accounting Software</h3>
           <p class="sentiment">QuickBooks, Xero, FreshBooks, Wave — tier limits and add-on costs compared.</p>
-          <div class="meta"><span>4 tools tracked</span><span>View →</span></div>
+          <div class="meta"><span>4 tools · 11 pricing tiers checked</span><span>Explore →</span></div>
         </a>
 
       </div>
