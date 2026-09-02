@@ -129,7 +129,44 @@
     .ss-process-arrow { display: none; }
   }
   .ss-cat-card { padding: 22px 20px !important; }
-  .ss-cat-card h3 { font-size: 1.2em; }
+  .ss-cat-card h3 { font-size: 1.2em; margin-top: 4px; }
+  .ss-cat-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+  }
+  .ss-cat-num {
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    color: var(--ink-soft, rgba(27,42,74,0.55));
+  }
+  .ss-cat-status {
+    font-size: 0.64rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--verified, #2f6e51);
+  }
+  .ss-cat-meta-row {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 0.7rem;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    color: var(--ink-soft, rgba(27,42,74,0.7));
+    margin-top: 12px;
+  }
+  .ss-cat-action {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 0.76rem;
+    color: var(--ink-soft, rgba(27,42,74,0.65));
+    margin-top: 14px;
+    text-align: right;
+    font-weight: 600;
+  }
+  .ss-cat-card:hover .ss-cat-action { color: var(--ink, #1b211d); }
+  .ss-cat-featured { box-shadow: 0 4px 0 rgba(27,33,29,0.07); }
+  .ss-cat-featured h3 { font-size: 1.3em; }
+  .ss-cat-featured .ss-cat-status { font-weight: 700; }
   .ss-nav-primary { font-weight: 700; }
 </style>
 </head>
@@ -220,72 +257,108 @@
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">Browse by category</p>
-        <h2>Nine categories, one methodology</h2>
-        <p>Deliberately narrow: every report follows the same sourcing and verification process, so comparisons stay apples-to-apples across the category.</p>
+        <h2>Nine categories. One methodology.</h2>
+        <p>Every report uses the same sourcing and verification process, so pricing comparisons stay apples-to-apples across the category.</p>
       </div>
       <div class="cat-grid">
 
-        <a href="reports/crm-software.html" class="cat-card ss-cat-card">
-          <span class="tab">Live report</span>
+        <a href="reports/crm-software.html" class="cat-card ss-cat-card ss-cat-featured">
+          <div class="ss-cat-top">
+            <span class="ss-cat-num">01</span>
+            <span class="ss-cat-status">● LIVE · VERIFIED AUG 2026</span>
+          </div>
           <h3>CRM Software</h3>
-          <p class="sentiment">HubSpot, Salesforce, Pipedrive, Zoho — pricing tiers and sentiment compared.</p>
-          <div class="meta"><span>4 tools · 12 pricing tiers checked</span><span>Explore →</span></div>
+          <p class="sentiment">HubSpot, Salesforce, Pipedrive &amp; Zoho — pricing, limits and buyer sentiment.</p>
+          <div class="ss-cat-meta-row">4 TOOLS · 12 TIERS CHECKED</div>
+          <div class="ss-cat-action">View report →</div>
         </a>
 
-        <a href="reports/help-desk.html" class="cat-card ss-cat-card">
-          <span class="tab">Live report</span>
+        <a href="reports/help-desk.html" class="cat-card ss-cat-card ss-cat-featured">
+          <div class="ss-cat-top">
+            <span class="ss-cat-num">02</span>
+            <span class="ss-cat-status">● LIVE · VERIFIED AUG 2026</span>
+          </div>
           <h3>Help Desk Software</h3>
-          <p class="sentiment">Zendesk, Freshdesk, Intercom, Help Scout — compared on seat cost and automation depth.</p>
-          <div class="meta"><span>4 tools · 12 pricing tiers checked</span><span>Explore →</span></div>
+          <p class="sentiment">Zendesk, Freshdesk, Intercom &amp; Help Scout — seat pricing, automation depth and sentiment.</p>
+          <div class="ss-cat-meta-row">4 TOOLS · 12 TIERS CHECKED</div>
+          <div class="ss-cat-action">View report →</div>
         </a>
 
-        <a href="reports/project-management.html" class="cat-card ss-cat-card">
-          <span class="tab">Live report</span>
+        <a href="reports/project-management.html" class="cat-card ss-cat-card ss-cat-featured">
+          <div class="ss-cat-top">
+            <span class="ss-cat-num">03</span>
+            <span class="ss-cat-status">● LIVE · VERIFIED AUG 2026</span>
+          </div>
           <h3>Project Management</h3>
-          <p class="sentiment">Asana, Monday, ClickUp, Notion — from lightweight boards to enterprise portfolio suites.</p>
-          <div class="meta"><span>4 tools · 9 pricing tiers checked</span><span>Explore →</span></div>
+          <p class="sentiment">Asana, Monday.com, ClickUp &amp; Notion — seat pricing, free-plan limits and sentiment.</p>
+          <div class="ss-cat-meta-row">4 TOOLS · 9 TIERS CHECKED</div>
+          <div class="ss-cat-action">View report →</div>
         </a>
 
         <a href="reports/email-marketing.html" class="cat-card ss-cat-card">
-          <span class="tab">Live report</span>
+          <div class="ss-cat-top">
+            <span class="ss-cat-num">04</span>
+            <span class="ss-cat-status">● LIVE · VERIFIED AUG 2026</span>
+          </div>
           <h3>Email Marketing</h3>
-          <p class="sentiment">Mailchimp, Klaviyo, ActiveCampaign, Kit — compared on list-size pricing curves.</p>
-          <div class="meta"><span>4 tools · 12 pricing tiers checked</span><span>Explore →</span></div>
+          <p class="sentiment">Mailchimp, Klaviyo, ActiveCampaign &amp; Kit — list-size pricing curves and sentiment.</p>
+          <div class="ss-cat-meta-row">4 TOOLS · 12 TIERS CHECKED</div>
+          <div class="ss-cat-action">View report →</div>
         </a>
 
         <a href="reports/e-signature.html" class="cat-card ss-cat-card">
-          <span class="tab">Live report</span>
+          <div class="ss-cat-top">
+            <span class="ss-cat-num">05</span>
+            <span class="ss-cat-status">● LIVE · VERIFIED AUG 2026</span>
+          </div>
           <h3>E-Signature Software</h3>
-          <p class="sentiment">DocuSign, PandaDoc, Dropbox Sign, SignNow — compared on seat pricing and send limits.</p>
-          <div class="meta"><span>4 tools · 8 pricing tiers checked</span><span>Explore →</span></div>
+          <p class="sentiment">DocuSign, PandaDoc, Dropbox Sign &amp; SignNow — seat pricing and send limits compared.</p>
+          <div class="ss-cat-meta-row">4 TOOLS · 8 TIERS CHECKED</div>
+          <div class="ss-cat-action">View report →</div>
         </a>
 
         <a href="reports/design-tools.html" class="cat-card ss-cat-card">
-          <span class="tab">Live report</span>
+          <div class="ss-cat-top">
+            <span class="ss-cat-num">06</span>
+            <span class="ss-cat-status">● LIVE · VERIFIED AUG 2026</span>
+          </div>
           <h3>Design &amp; Prototyping Tools</h3>
-          <p class="sentiment">Figma, Framer, Sketch, Canva — compared on seat pricing and free-plan limits.</p>
-          <div class="meta"><span>4 tools · 10 pricing tiers checked</span><span>Explore →</span></div>
+          <p class="sentiment">Figma, Framer, Sketch &amp; Canva — seat pricing and free-plan limits compared.</p>
+          <div class="ss-cat-meta-row">4 TOOLS · 10 TIERS CHECKED</div>
+          <div class="ss-cat-action">View report →</div>
         </a>
 
         <a href="reports/scheduling.html" class="cat-card ss-cat-card">
-          <span class="tab">Live report</span>
+          <div class="ss-cat-top">
+            <span class="ss-cat-num">07</span>
+            <span class="ss-cat-status">● LIVE · VERIFIED AUG 2026</span>
+          </div>
           <h3>Scheduling Software</h3>
-          <p class="sentiment">Calendly, Acuity, SavvyCal, YouCanBookMe — compared on per-seat and per-calendar pricing.</p>
-          <div class="meta"><span>4 tools · 12 pricing tiers checked</span><span>Explore →</span></div>
+          <p class="sentiment">Calendly, Acuity, SavvyCal &amp; YouCanBookMe — per-seat pricing and limits compared.</p>
+          <div class="ss-cat-meta-row">4 TOOLS · 12 TIERS CHECKED</div>
+          <div class="ss-cat-action">View report →</div>
         </a>
 
         <a href="reports/payroll-hr.html" class="cat-card ss-cat-card">
-          <span class="tab">Live report</span>
+          <div class="ss-cat-top">
+            <span class="ss-cat-num">08</span>
+            <span class="ss-cat-status">● LIVE · VERIFIED AUG 2026</span>
+          </div>
           <h3>Payroll &amp; HR</h3>
-          <p class="sentiment">Gusto, Rippling, ADP, Justworks — per-employee pricing and compliance coverage.</p>
-          <div class="meta"><span>4 tools · 6 pricing tiers checked</span><span>Explore →</span></div>
+          <p class="sentiment">Gusto, Rippling, ADP &amp; Justworks — per-employee pricing and compliance coverage.</p>
+          <div class="ss-cat-meta-row">4 TOOLS · 6 TIERS CHECKED</div>
+          <div class="ss-cat-action">View report →</div>
         </a>
 
         <a href="reports/accounting.html" class="cat-card ss-cat-card">
-          <span class="tab">Live report</span>
+          <div class="ss-cat-top">
+            <span class="ss-cat-num">09</span>
+            <span class="ss-cat-status">● LIVE · VERIFIED AUG 2026</span>
+          </div>
           <h3>Accounting Software</h3>
-          <p class="sentiment">QuickBooks, Xero, FreshBooks, Wave — tier limits and add-on costs compared.</p>
-          <div class="meta"><span>4 tools · 11 pricing tiers checked</span><span>Explore →</span></div>
+          <p class="sentiment">QuickBooks, Xero, FreshBooks &amp; Wave — tier limits and add-on costs compared.</p>
+          <div class="ss-cat-meta-row">4 TOOLS · 11 TIERS CHECKED</div>
+          <div class="ss-cat-action">View report →</div>
         </a>
 
       </div>
