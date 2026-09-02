@@ -65,14 +65,16 @@
   /* --- Design review additions, scoped with ss- prefix to avoid
        colliding with existing stackscope-styles.css rules --- */
   .ss-hero-card { box-shadow: 0 6px 0 rgba(27,42,74,0.08); }
-  .ss-head-right { display: flex; align-items: center; gap: 4px; font-family: var(--font-mono, 'IBM Plex Mono', monospace); }
+  .tag-head { flex-wrap: wrap; gap: 10px 16px; }
+  .ss-head-right { display: flex; align-items: center; gap: 10px; font-family: var(--font-mono, 'IBM Plex Mono', monospace); }
+  .ss-head-right .ss-sep { opacity: 0.5; }
   .ss-verified-pill {
-    color: var(--green, #1F7A4D);
+    color: var(--verified, #2f6e51);
     font-weight: 700;
     letter-spacing: 0.05em;
   }
   .ss-name-strong { font-weight: 700; }
-  .ss-val-lg { font-size: 1.15em; font-weight: 700; color: var(--ink, #1B2A4A); }
+  .ss-val-lg { font-size: 1.15em; font-weight: 700; color: var(--ink, #1b211d); }
   .ss-verify-sig {
     display: flex;
     flex-wrap: wrap;
@@ -85,7 +87,8 @@
     letter-spacing: 0.04em;
     color: var(--ink-soft, rgba(27,42,74,0.65));
   }
-  .ss-process { padding: 28px 0; }
+  .hero-ctas { margin-bottom: 8px; }
+  .ss-process { padding: 28px 0; margin-top: 28px; }
   .ss-process-grid {
     display: flex;
     align-items: flex-start;
@@ -96,11 +99,12 @@
   .ss-process-step { max-width: 260px; text-align: left; }
   .ss-process-num {
     display: block;
-    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
-    font-size: 0.78rem;
-    letter-spacing: 0.08em;
-    color: var(--green, #1F7A4D);
-    margin-bottom: 4px;
+    font-family: var(--font-display, 'Space Grotesk', sans-serif);
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 0.02em;
+    color: var(--verified, #2f6e51);
+    margin-bottom: 6px;
   }
   .ss-process-step h4 { margin: 0 0 6px; }
   .ss-process-step p { margin: 0; font-size: 0.9rem; color: var(--ink-soft, rgba(27,42,74,0.7)); }
@@ -109,7 +113,16 @@
     font-family: var(--font-mono, 'IBM Plex Mono', monospace);
     color: var(--ink-soft, rgba(27,42,74,0.4));
     font-size: 1.2rem;
-    padding-top: 22px;
+    padding-top: 30px;
+  }
+  .ss-process-proof {
+    text-align: center;
+    margin: 22px auto 0;
+    max-width: 46ch;
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 0.8rem;
+    letter-spacing: 0.02em;
+    color: var(--ink-soft, rgba(27,42,74,0.65));
   }
   @media (max-width: 720px) {
     .ss-process-arrow { display: none; }
@@ -148,7 +161,7 @@
       <div class="tag-card ss-hero-card">
         <div class="tag-head">
           <span>Field sample — CRM software</span>
-          <span class="ss-head-right">4 OF 4 TRACKED &nbsp;<span class="ss-verified-pill">● VERIFIED</span></span>
+          <span class="ss-head-right">4 OF 4 TRACKED <span class="ss-sep">·</span> <span class="ss-verified-pill">● VERIFIED</span></span>
         </div>
         <div class="tag-row">
           <span class="name ss-name-strong">HubSpot CRM</span>
@@ -199,6 +212,7 @@
         <p>Publish with sourcing shown, then re-verify on a recurring schedule as pricing changes.</p>
       </div>
     </div>
+    <p class="ss-process-proof">Every number has a source. Every report has a verification date.</p>
   </section>
 
   <section class="section" id="categories">
