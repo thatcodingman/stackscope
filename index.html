@@ -157,11 +157,6 @@
     opacity: 0.9;
   }
   .ss-cat-meta-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-    gap: 4px 10px;
     font-family: var(--font-mono, 'IBM Plex Mono', monospace);
     font-size: 0.7rem;
     letter-spacing: 0.03em;
@@ -170,9 +165,13 @@
     margin-top: 10px;
   }
   .ss-cat-pricing-model {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 0.68rem;
+    letter-spacing: 0.03em;
     font-weight: 500;
-    opacity: 0.7;
-    text-align: right;
+    color: var(--ink-soft, rgba(27,42,74,0.85));
+    opacity: 0.85;
+    margin-top: 3px;
   }
   .ss-cat-action {
     font-family: var(--font-mono, 'IBM Plex Mono', monospace);
@@ -290,7 +289,8 @@
           </div>
           <h3>CRM Software</h3>
           <p class="sentiment">HubSpot, Salesforce, Pipedrive &amp; Zoho — pricing, limits and buyer sentiment.</p>
-          <div class="ss-cat-meta-row"><span>4 TOOLS · 12 TIERS CHECKED</span><span class="ss-cat-pricing-model">PER-SEAT PRICING</span></div>
+          <div class="ss-cat-meta-row">4 TOOLS · 12 TIERS CHECKED</div>
+          <div class="ss-cat-pricing-model">PER-SEAT PRICING</div>
           <div class="ss-cat-action">View report <span class="ss-cat-action-arrow">→</span></div>
         </a>
 
@@ -301,7 +301,8 @@
           </div>
           <h3>Help Desk Software</h3>
           <p class="sentiment">Zendesk, Freshdesk, Intercom &amp; Help Scout — seat pricing, automation depth and sentiment.</p>
-          <div class="ss-cat-meta-row"><span>4 TOOLS · 12 TIERS CHECKED</span><span class="ss-cat-pricing-model">PER-SEAT PRICING</span></div>
+          <div class="ss-cat-meta-row">4 TOOLS · 12 TIERS CHECKED</div>
+          <div class="ss-cat-pricing-model">PER-SEAT PRICING</div>
           <div class="ss-cat-action">View report <span class="ss-cat-action-arrow">→</span></div>
         </a>
 
@@ -312,7 +313,8 @@
           </div>
           <h3>Project Management</h3>
           <p class="sentiment">Asana, Monday.com, ClickUp &amp; Notion — seat pricing, free-plan limits and sentiment.</p>
-          <div class="ss-cat-meta-row"><span>4 TOOLS · 9 TIERS CHECKED</span><span class="ss-cat-pricing-model">PER-SEAT PRICING</span></div>
+          <div class="ss-cat-meta-row">4 TOOLS · 9 TIERS CHECKED</div>
+          <div class="ss-cat-pricing-model">PER-SEAT PRICING</div>
           <div class="ss-cat-action">View report <span class="ss-cat-action-arrow">→</span></div>
         </a>
 
@@ -323,7 +325,8 @@
           </div>
           <h3>Email Marketing</h3>
           <p class="sentiment">Mailchimp, Klaviyo, ActiveCampaign &amp; Kit — list-size pricing curves and sentiment.</p>
-          <div class="ss-cat-meta-row"><span>4 TOOLS · 12 TIERS CHECKED</span><span class="ss-cat-pricing-model">CONTACT-BASED PRICING</span></div>
+          <div class="ss-cat-meta-row">4 TOOLS · 12 TIERS CHECKED</div>
+          <div class="ss-cat-pricing-model">CONTACT-BASED PRICING</div>
           <div class="ss-cat-action">View report <span class="ss-cat-action-arrow">→</span></div>
         </a>
 
@@ -334,7 +337,8 @@
           </div>
           <h3>E-Signature Software</h3>
           <p class="sentiment">DocuSign, PandaDoc, Dropbox Sign &amp; SignNow — seat pricing and send limits compared.</p>
-          <div class="ss-cat-meta-row"><span>4 TOOLS · 8 TIERS CHECKED</span><span class="ss-cat-pricing-model">PER-SEAT PRICING</span></div>
+          <div class="ss-cat-meta-row">4 TOOLS · 8 TIERS CHECKED</div>
+          <div class="ss-cat-pricing-model">PER-SEAT PRICING</div>
           <div class="ss-cat-action">View report <span class="ss-cat-action-arrow">→</span></div>
         </a>
 
@@ -345,7 +349,8 @@
           </div>
           <h3>Design &amp; Prototyping Tools</h3>
           <p class="sentiment">Figma, Framer, Sketch &amp; Canva — seat pricing and free-plan limits compared.</p>
-          <div class="ss-cat-meta-row"><span>4 TOOLS · 10 TIERS CHECKED</span><span class="ss-cat-pricing-model">PER-EDITOR PRICING</span></div>
+          <div class="ss-cat-meta-row">4 TOOLS · 10 TIERS CHECKED</div>
+          <div class="ss-cat-pricing-model">PER-EDITOR PRICING</div>
           <div class="ss-cat-action">View report <span class="ss-cat-action-arrow">→</span></div>
         </a>
 
@@ -356,7 +361,8 @@
           </div>
           <h3>Scheduling Software</h3>
           <p class="sentiment">Calendly, Acuity, SavvyCal &amp; YouCanBookMe — per-seat pricing and limits compared.</p>
-          <div class="ss-cat-meta-row"><span>4 TOOLS · 12 TIERS CHECKED</span><span class="ss-cat-pricing-model">SEAT + PER-CALENDAR PRICING</span></div>
+          <div class="ss-cat-meta-row">4 TOOLS · 12 TIERS CHECKED</div>
+          <div class="ss-cat-pricing-model">PER-SEAT / BOOKING-BASED</div>
           <div class="ss-cat-action">View report <span class="ss-cat-action-arrow">→</span></div>
         </a>
 
@@ -367,7 +373,8 @@
           </div>
           <h3>Payroll &amp; HR</h3>
           <p class="sentiment">Gusto, Rippling, ADP &amp; Justworks — per-employee pricing and compliance coverage.</p>
-          <div class="ss-cat-meta-row"><span>4 TOOLS · 6 TIERS CHECKED</span><span class="ss-cat-pricing-model">PER-EMPLOYEE / PEO PRICING</span></div>
+          <div class="ss-cat-meta-row">4 TOOLS · 6 TIERS CHECKED</div>
+          <div class="ss-cat-pricing-model">PER-EMPLOYEE PRICING</div>
           <div class="ss-cat-action">View report <span class="ss-cat-action-arrow">→</span></div>
         </a>
 
@@ -378,7 +385,8 @@
           </div>
           <h3>Accounting Software</h3>
           <p class="sentiment">QuickBooks, Xero, FreshBooks &amp; Wave — tier limits and add-on costs compared.</p>
-          <div class="ss-cat-meta-row"><span>4 TOOLS · 11 TIERS CHECKED</span><span class="ss-cat-pricing-model">TIERED PLAN PRICING</span></div>
+          <div class="ss-cat-meta-row">4 TOOLS · 11 TIERS CHECKED</div>
+          <div class="ss-cat-pricing-model">TIER / USAGE-BASED</div>
           <div class="ss-cat-action">View report <span class="ss-cat-action-arrow">→</span></div>
         </a>
 
