@@ -207,7 +207,7 @@
   .ss-cat-featured h3 { font-size: 1.42em; }
   .ss-standard {
     margin-top: 32px;
-    padding: 18px 22px;
+    padding: 14px 20px;
     border-left: 3px solid var(--verified, #2f6e51);
     background: var(--paper-raised, #f6f7f2);
   }
@@ -219,14 +219,41 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--verified, #2f6e51);
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
   .ss-standard p {
     margin: 0;
     color: var(--ink-soft, rgba(27,42,74,0.75));
     font-size: 0.95rem;
-    line-height: 1.55;
-    max-width: 62ch;
+    line-height: 1.5;
+    max-width: 60ch;
+  }
+  #methodology { padding-bottom: 24px; }
+  .ss-closing-signal {
+    text-align: center;
+    margin: 0 0 32px;
+    padding: 0 20px;
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft, rgba(27,42,74,0.55));
+  }
+  .foot-grid { align-items: flex-start; }
+  .foot-brand { max-width: 52ch; }
+  .ss-foot-tagline {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 0.78rem;
+    color: var(--ink-soft, rgba(27,42,74,0.6));
+    margin: 10px 0 0;
+  }
+  .ss-copyright {
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 0.7rem;
+    color: var(--ink-soft, rgba(27,42,74,0.5));
+    margin: 20px 0 0;
+    padding-top: 16px;
+    border-top: 1px solid var(--line, #cfd5c6);
   }
   .ss-nav-primary { font-weight: 700; }
 </style>
@@ -472,15 +499,20 @@
       </ol>
       <div class="ss-standard">
         <span class="ss-standard-label">Our standard</span>
-        <p>No single source determines a published figure. Vendor documentation establishes the baseline; independent sources are used to cross-check it.</p>
+        <p>Vendor documentation sets the baseline. Independent sources cross-check it.</p>
       </div>
     </div>
   </section>
 </main>
 
+<p class="ss-closing-signal">Independent pricing research · Sourced · Cross-checked · Re-verified</p>
+
 <footer>
   <div class="wrap foot-grid">
-    <p class="foot-disclosure">StackScope aggregates publicly available pricing and sentiment data. We are not affiliated with, and do not receive payment from, any vendor listed. Reports are informational and are not a purchasing recommendation — always confirm current terms with the vendor directly.</p>
+    <div class="foot-brand">
+      <p class="foot-disclosure">StackScope aggregates publicly available pricing and sentiment data. We are not affiliated with, and do not receive payment from, any vendor listed. Reports are informational and are not a purchasing recommendation — always confirm current terms with the vendor directly.</p>
+      <p class="ss-foot-tagline">Independent pricing research. Re-verified regularly.</p>
+    </div>
     <nav class="foot-links">
       <a href="#categories">Categories</a>
       <a href="#methodology">Methodology</a>
@@ -490,6 +522,9 @@
       <a href="stackscope-terms.html">Terms</a>
       <a href="stackscope-privacy.html">Privacy</a>
     </nav>
+  </div>
+  <div class="wrap">
+    <p class="ss-copyright">© 2026 StackScope</p>
   </div>
 </footer>
 
