@@ -205,6 +205,29 @@
   .ss-cat-card:hover .ss-cat-action-arrow { transform: translateX(3px); }
   .ss-cat-featured { box-shadow: 0 4px 0 rgba(27,33,29,0.07); }
   .ss-cat-featured h3 { font-size: 1.42em; }
+  .ss-standard {
+    margin-top: 32px;
+    padding: 18px 22px;
+    border-left: 3px solid var(--verified, #2f6e51);
+    background: var(--paper-raised, #f6f7f2);
+  }
+  .ss-standard-label {
+    display: block;
+    font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--verified, #2f6e51);
+    margin-bottom: 8px;
+  }
+  .ss-standard p {
+    margin: 0;
+    color: var(--ink-soft, rgba(27,42,74,0.75));
+    font-size: 0.95rem;
+    line-height: 1.55;
+    max-width: 62ch;
+  }
   .ss-nav-primary { font-weight: 700; }
 </style>
 </head>
@@ -443,10 +466,14 @@
         <li>
           <div>
             <h4>Re-verify on a schedule</h4>
-            <p>Every report carries a dated "last verified" stamp and gets rechecked on a recurring cycle, since vendor pricing changes without notice.</p>
+            <p>Every report carries a dated "last verified" stamp and is rechecked on a recurring schedule — vendor pricing changes without notice.</p>
           </div>
         </li>
       </ol>
+      <div class="ss-standard">
+        <span class="ss-standard-label">Our standard</span>
+        <p>No single source determines a published figure. Vendor documentation establishes the baseline; independent sources are used to cross-check it.</p>
+      </div>
     </div>
   </section>
 </main>
