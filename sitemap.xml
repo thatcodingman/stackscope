@@ -1,33 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://usestackscope.com/index.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://cappersunite.com/</loc>
   </url>
   <url>
-    <loc>https://usestackscope.com/stackscope-about.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://cappersunite.com/parlaylab</loc>
   </url>
   <url>
-    <loc>https://usestackscope.com/stackscope-faq.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://cappersunite.com/bankroll</loc>
   </url>
   <url>
-    <loc>https://usestackscope.com/stackscope-contact.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
+    <loc>https://cappersunite.com/closer</loc>
   </url>
   <url>
-    <loc>https://usestackscope.com/stackscope-terms.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <loc>https://cappersunite.com/odds-converter</loc>
   </url>
   <url>
-    <loc>https://usestackscope.com/stackscope-privacy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <loc>https://cappersunite.com/no-vig-calculator</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/bet-sizing-calculator</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/hedge-calculator</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/round-robin-builder</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/blog</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/changelog</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/blog/how-to-hedge-a-bet</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/blog/round-robin-vs-parlay</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/blog/bankroll-management-101</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/about</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/contact</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/faq</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/learn/closing-line-value</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/learn/how-vig-works</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/learn/win-rate-vs-roi</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/learn/how-to-use-parlaylab</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/learn/how-to-use-closer</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/learn/how-to-use-bankroll-tracker</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/learn/how-to-use-linereader</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/learn/how-to-use-fairline</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/learn/how-to-use-edgesize</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/learn/how-to-use-hedge-calculator</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/learn/how-to-use-round-robin-builder</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/privacy</loc>
+  </url>
+  <url>
+    <loc>https://cappersunite.com/terms</loc>
   </url>
 </urlset>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://usestackscope.com/sitemap.xml
+Sitemap: https://quiethike.com/sitemap.xml
