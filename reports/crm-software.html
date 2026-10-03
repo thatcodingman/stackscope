@@ -34,6 +34,43 @@
         { "@type": "ListItem", "position": 3, "item": { "@type": "SoftwareApplication", "name": "Pipedrive", "applicationCategory": "BusinessApplication", "url": "https://www.pipedrive.com/en/pricing", "offers": { "@type": "AggregateOffer", "lowPrice": 14, "highPrice": 280, "priceCurrency": "USD" } } },
         { "@type": "ListItem", "position": 4, "item": { "@type": "SoftwareApplication", "name": "Zoho CRM", "applicationCategory": "BusinessApplication", "url": "https://www.zoho.com/crm/zohocrm-pricing.html", "offers": { "@type": "AggregateOffer", "lowPrice": 14, "highPrice": 280, "priceCurrency": "USD" } } }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does HubSpot have a free CRM plan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — HubSpot's free plan supports 2 users and 1,000 contacts, plus up to 1,000,000 records on other standard objects, and it's an ongoing plan, not a trial. It's missing advanced automation and workflows, which require the paid Sales Hub Starter tier ($20/month) or higher."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which CRM is cheapest for a 5-person team?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pipedrive and Zoho CRM tie for cheapest at 5 users — both $70/month billed annually ($120/month for Pipedrive, $100/month for Zoho if billed monthly). HubSpot and Salesforce cost more at that size ($100/month and $125/month respectively), though they include more built-in automation out of the box."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Salesforce have a free plan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — Salesforce's Free Suite supports 2 users as an ongoing plan, not a trial, though it requires logging in at least once every 60 days to stay active. Its exact contact/record cap isn't consistently documented in Salesforce's current public materials."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What AI features are included in these CRMs without extra cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HubSpot's Starter plan includes 500 AI credits (additional credits cost $0.010 each). Salesforce's Starter Suite includes assistive AI (Employee Agent) at no charge, with paid Agentforce usage separate. Pipedrive's Lite tier now ships with AI-generated reports and a Sales Assistant included. Zoho's Zia Agents require the Professional tier or higher, but include up to 30 million hosted-LLM tokens per month."
+          }
+        }
+      ]
     }
   ]
 }
@@ -173,6 +210,33 @@
           <!-- One group per tool. Only link sources you actually
                consulted — never fabricate a URL. -->
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">FAQ</p>
+        <h2>Common questions</h2>
+      </div>
+      <div class="report-card">
+        <details style="padding: 14px 0; border-bottom: 1px solid var(--line, #ddd);">
+          <summary style="cursor: pointer; font-weight: 600;">Does HubSpot have a free CRM plan?</summary>
+          <p style="margin-top: 10px;">Yes — HubSpot's free plan supports 2 users and 1,000 contacts, plus up to 1,000,000 records on other standard objects, and it's an ongoing plan, not a trial. It's missing advanced automation and workflows, which require the paid Sales Hub Starter tier ($20/month) or higher.</p>
+        </details>
+        <details style="padding: 14px 0; border-bottom: 1px solid var(--line, #ddd);">
+          <summary style="cursor: pointer; font-weight: 600;">Which CRM is cheapest for a 5-person team?</summary>
+          <p style="margin-top: 10px;">Pipedrive and Zoho CRM tie for cheapest at 5 users — both $70/month billed annually ($120/month for Pipedrive, $100/month for Zoho if billed monthly). HubSpot and Salesforce cost more at that size ($100/month and $125/month respectively), though they include more built-in automation out of the box.</p>
+        </details>
+        <details style="padding: 14px 0; border-bottom: 1px solid var(--line, #ddd);">
+          <summary style="cursor: pointer; font-weight: 600;">Does Salesforce have a free plan?</summary>
+          <p style="margin-top: 10px;">Yes — Salesforce's Free Suite supports 2 users as an ongoing plan, not a trial, though it requires logging in at least once every 60 days to stay active. Its exact contact/record cap isn't consistently documented in Salesforce's current public materials.</p>
+        </details>
+        <details style="padding: 14px 0;">
+          <summary style="cursor: pointer; font-weight: 600;">What AI features are included in these CRMs without extra cost?</summary>
+          <p style="margin-top: 10px;">HubSpot's Starter plan includes 500 AI credits (additional credits cost $0.010 each). Salesforce's Starter Suite includes assistive AI (Employee Agent) at no charge, with paid Agentforce usage separate. Pipedrive's Lite tier now ships with AI-generated reports and a Sales Assistant included. Zoho's Zia Agents require the Professional tier or higher, but include up to 30 million hosted-LLM tokens per month.</p>
+        </details>
       </div>
     </div>
   </section>
