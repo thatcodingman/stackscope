@@ -1,93 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://cappersunite.com/</loc>
+    <loc>https://usestackscope.com/index.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://cappersunite.com/parlaylab</loc>
+    <loc>https://usestackscope.com/reports/crm-software.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://cappersunite.com/bankroll</loc>
+    <loc>https://usestackscope.com/reports/help-desk.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://cappersunite.com/closer</loc>
+    <loc>https://usestackscope.com/reports/project-management.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://cappersunite.com/odds-converter</loc>
+    <loc>https://usestackscope.com/reports/email-marketing.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://cappersunite.com/no-vig-calculator</loc>
+    <loc>https://usestackscope.com/reports/e-signature.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://cappersunite.com/bet-sizing-calculator</loc>
+    <loc>https://usestackscope.com/reports/design-tools.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://cappersunite.com/hedge-calculator</loc>
+    <loc>https://usestackscope.com/reports/scheduling.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://cappersunite.com/round-robin-builder</loc>
+    <loc>https://usestackscope.com/reports/payroll-hr.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://cappersunite.com/blog</loc>
+    <loc>https://usestackscope.com/reports/accounting.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://cappersunite.com/changelog</loc>
+    <loc>https://usestackscope.com/stackscope-changelog.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://cappersunite.com/blog/how-to-hedge-a-bet</loc>
+    <loc>https://usestackscope.com/stackscope-about.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://cappersunite.com/blog/round-robin-vs-parlay</loc>
+    <loc>https://usestackscope.com/stackscope-faq.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://cappersunite.com/blog/bankroll-management-101</loc>
+    <loc>https://usestackscope.com/stackscope-contact.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://cappersunite.com/about</loc>
+    <loc>https://usestackscope.com/stackscope-terms.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://cappersunite.com/contact</loc>
-  </url>
-  <url>
-    <loc>https://cappersunite.com/faq</loc>
-  </url>
-  <url>
-    <loc>https://cappersunite.com/learn/closing-line-value</loc>
-  </url>
-  <url>
-    <loc>https://cappersunite.com/learn/how-vig-works</loc>
-  </url>
-  <url>
-    <loc>https://cappersunite.com/learn/win-rate-vs-roi</loc>
-  </url>
-  <url>
-    <loc>https://cappersunite.com/learn/how-to-use-parlaylab</loc>
-  </url>
-  <url>
-    <loc>https://cappersunite.com/learn/how-to-use-closer</loc>
-  </url>
-  <url>
-    <loc>https://cappersunite.com/learn/how-to-use-bankroll-tracker</loc>
-  </url>
-  <url>
-    <loc>https://cappersunite.com/learn/how-to-use-linereader</loc>
-  </url>
-  <url>
-    <loc>https://cappersunite.com/learn/how-to-use-fairline</loc>
-  </url>
-  <url>
-    <loc>https://cappersunite.com/learn/how-to-use-edgesize</loc>
-  </url>
-  <url>
-    <loc>https://cappersunite.com/learn/how-to-use-hedge-calculator</loc>
-  </url>
-  <url>
-    <loc>https://cappersunite.com/learn/how-to-use-round-robin-builder</loc>
-  </url>
-  <url>
-    <loc>https://cappersunite.com/privacy</loc>
-  </url>
-  <url>
-    <loc>https://cappersunite.com/terms</loc>
+    <loc>https://usestackscope.com/stackscope-privacy.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
   </url>
 </urlset>
