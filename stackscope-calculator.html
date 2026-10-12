@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Software Cost Calculator 2026: Compare by Team Size — StackScope</title>
+<meta name="description" content="Enter your team size and compare entry-tier costs for CRM, help desk, project management, design and payroll tools. Verified October 2026.">
+<link rel="canonical" href="https://usestackscope.com/stackscope-calculator.html">
+<meta property="og:title" content="Software Cost Calculator 2026: Compare by Team Size — StackScope">
+<meta property="og:description" content="Enter your team size and compare entry-tier costs for CRM, help desk, project management, design and payroll tools. Verified October 2026.">
+<meta property="og:image" content="https://usestackscope.com/og/og-index.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://usestackscope.com/stackscope-calculator.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://usestackscope.com/og/og-index.png">
+<meta property="og:type" content="article">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="stackscope-styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://usestackscope.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cost calculator",
+          "item": "https://usestackscope.com/stackscope-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "name": "Software cost calculator",
+      "description": "Enter your team size and compare entry-tier costs for CRM, help desk, project management, design and payroll tools. Verified October 2026.",
+      "url": "https://usestackscope.com/stackscope-calculator.html",
+      "dateModified": "2026-10-12"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How does this calculator work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It multiplies each tool's published entry-tier price by your team size, using the figures in StackScope's reports, last verified October 2026. It uses list prices, with the minimums and per-employee rules each vendor publishes, and does not include add-ons, AI usage, taxes or promotions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do some tools show a higher price than the sticker rate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some vendors set minimums. Monday.com requires at least 3 seats on every paid plan, so a team of 1 or 2 pays for 3. Framer includes the first editor in its site fee and charges $20 per month for each additional Full Editor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this a quote?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It is an estimate of entry-tier list prices. Always confirm current terms and your own needs with the vendor before buying."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="bracket">[</span>StackScope<span class="bracket">]</span></a>
+    <nav class="main-nav">
+      <a href="index.html#categories">Categories</a>
+      <a href="index.html#methodology">Methodology</a>
+      <a href="stackscope-changelog.html">Changelog</a>
+      <a href="stackscope-about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap" style="padding-top: 36px;">
+    <p style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--ink-soft);">
+      <a href="index.html" style="color: var(--ink-soft);">Home</a> /
+      Cost calculator
+    </p>
+  </div>
+
+  <section class="section" style="padding-top: 12px;">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Calculator</p>
+        <h1>Software cost calculator, 2026</h1>
+        <p>Pick a category and enter your team size to see what each tool's entry tier costs per month, cheapest first. Figures are the list prices from StackScope's reports, last verified October 2026.</p>
+      </div>
+
+      <div class="report-card" style="margin-bottom: 28px;">
+        <div class="report-toolbar" style="flex-wrap: wrap; gap: 12px;">
+          <label>Category <select id="calc-cat"><option value="crm">CRM software</option><option value="helpdesk">Help desk software</option><option value="pm">Project management</option><option value="design">Design tools</option><option value="payroll">Payroll software</option></select></label>
+          <label><span id="calc-unit-label">Users</span> <input id="calc-n" type="number" min="1" max="500" value="5" style="width: 80px;"></label>
+          <label>Billing <select id="calc-bill"><option value="a">Annual</option><option value="m">Monthly</option></select></label>
+        </div>
+        <div class="table-scroll">
+          <table class="compare">
+            <thead><tr><th>Tool</th><th>Tier</th><th>Per month</th><th>Notes</th></tr></thead>
+            <tbody id="calc-body">
+<tr><td class="tool-name"><a href="reports/pipedrive-pricing.html">Pipedrive</a></td><td>Lite</td><td><span class="price">$70.00</span></td><td>No automations or sequences on Lite.</td></tr>
+<tr><td class="tool-name"><a href="reports/zoho-crm-pricing.html">Zoho CRM</a></td><td>Standard</td><td><span class="price">$70.00</span></td><td>Annual or monthly Standard rate.</td></tr>
+<tr><td class="tool-name"><a href="reports/hubspot-pricing.html">HubSpot</a></td><td>Sales Hub Starter</td><td><span class="price">$100.00</span></td><td>Standard rate; a limited-time new-customer promotion is not included.</td></tr>
+<tr><td class="tool-name"><a href="reports/salesforce-pricing.html">Salesforce</a></td><td>Starter Suite</td><td><span class="price">$125.00</span></td><td>Same price billed annually or monthly.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="report-footnote" id="calc-foot" style="padding: 12px 16px;">Entry-tier list prices only. Add-ons, AI usage, taxes and promotions are not included. Payroll prices are shown as monthly totals and do not change with the billing toggle. Quote-only tools (Rippling, ADP) are not shown. <a href="reports/crm-software.html" id="calc-report">See the full CRM software report →</a></p>
+      </div>
+      <noscript><p>The calculator needs JavaScript. The table above shows 5 users on annual billing.</p></noscript>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">FAQ</p>
+        <h2>Common questions</h2>
+      </div>
+      <div class="report-card">
+        <details style="padding: 14px 0; border-bottom: 1px solid var(--line, #ddd);"><summary style="cursor: pointer; font-weight: 600;">How does this calculator work?</summary><p style="margin-top: 10px;">It multiplies each tool's published entry-tier price by your team size, using the figures in StackScope's reports, last verified October 2026. It uses list prices, with the minimums and per-employee rules each vendor publishes, and does not include add-ons, AI usage, taxes or promotions.</p></details>
+        <details style="padding: 14px 0; border-bottom: 1px solid var(--line, #ddd);"><summary style="cursor: pointer; font-weight: 600;">Why do some tools show a higher price than the sticker rate?</summary><p style="margin-top: 10px;">Some vendors set minimums. Monday.com requires at least 3 seats on every paid plan, so a team of 1 or 2 pays for 3. Framer includes the first editor in its site fee and charges $20 per month for each additional Full Editor.</p></details>
+        <details style="padding: 14px 0; border-bottom: 1px solid var(--line, #ddd);"><summary style="cursor: pointer; font-weight: 600;">Is this a quote?</summary><p style="margin-top: 10px;">No. It is an estimate of entry-tier list prices. Always confirm current terms and your own needs with the vendor before buying.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">More</p>
+        <h2>Keep browsing</h2>
+        <p><a href="stackscope-compare.html">All reports, guides and comparisons →</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+<script>
+(function() {
+  var DATA = {"crm": {"unit": "users", "default": 5, "tools": [{"n": "HubSpot", "s": "hubspot", "t": "Sales Hub Starter", "k": "seat", "a": 20, "m": 20, "x": 1, "note": "Standard rate; a limited-time new-customer promotion is not included."}, {"n": "Salesforce", "s": "salesforce", "t": "Starter Suite", "k": "seat", "a": 25, "m": 25, "x": 1, "note": "Same price billed annually or monthly."}, {"n": "Pipedrive", "s": "pipedrive", "t": "Lite", "k": "seat", "a": 14, "m": 24, "x": 1, "note": "No automations or sequences on Lite."}, {"n": "Zoho CRM", "s": "zoho-crm", "t": "Standard", "k": "seat", "a": 14, "m": 20, "x": 1, "note": "Annual or monthly Standard rate."}]}, "helpdesk": {"unit": "agents", "default": 5, "tools": [{"n": "Zendesk", "s": "zendesk", "t": "Support Team", "k": "seat", "a": 19, "m": 25, "x": 1, "note": "AI resolutions and Copilot are billed on top."}, {"n": "Freshdesk", "s": "freshdesk", "t": "Growth", "k": "seat", "a": 19, "m": null, "x": 1, "note": "Monthly USD price is not publicly posted."}, {"n": "Help Scout", "s": "help-scout", "t": "Standard", "k": "seat", "a": 25, "m": 30, "x": 1, "note": "Free plan available for up to 5 users."}, {"n": "Intercom", "s": "intercom", "t": "Essential", "k": "seat", "a": 29, "m": 39, "x": 1, "note": "Fin AI bills $0.99 per outcome on top of seats."}]}, "pm": {"unit": "members", "default": 5, "tools": [{"n": "ClickUp", "s": "clickup", "t": "Unlimited", "k": "seat", "a": 7, "m": 10, "x": 1, "note": "Brain AI add-on is extra."}, {"n": "Monday.com", "s": "monday", "t": "Basic", "k": "seat", "a": 9, "m": 12, "x": 3, "note": "Every paid plan has a 3-seat minimum."}, {"n": "Notion", "s": "notion", "t": "Plus", "k": "seat", "a": 10, "m": 12, "x": 1, "note": "Full Notion AI requires the Business plan."}, {"n": "Asana", "s": "asana", "t": "Starter", "k": "seat", "a": 10.99, "m": 13.49, "x": 1, "note": "AI is capped at 5 requests per user per month."}]}, "design": {"unit": "editors", "default": 5, "tools": [{"n": "Sketch", "s": "sketch", "t": "Standard", "k": "seat", "a": 12, "m": 14, "x": 1, "note": "Full editing requires the Mac app."}, {"n": "Figma", "s": "figma", "t": "Professional Full seat", "k": "seat", "a": 16, "m": 20, "x": 1, "note": "Dev, Collab and View seats are priced differently."}, {"n": "Framer", "s": "framer", "t": "Basic", "k": "extra", "a": 10, "m": 15, "x": 20, "note": "First editor included; each additional Full Editor is $20 per month."}, {"n": "Canva", "s": "canva", "t": "Business", "k": "seat", "a": 20.833333333333332, "m": 25, "x": 1, "note": "Canva Business at $250 per person per year; Canva Pro is one-person only."}]}, "payroll": {"unit": "employees", "default": 5, "tools": [{"n": "Gusto", "s": "gusto", "t": "Simple", "k": "pay", "a": 49, "m": 49, "x": 6, "note": "Single-state only; $49 base plus $6 per person."}, {"n": "Justworks", "s": "justworks", "t": "Payroll", "k": "pay", "a": 50, "m": 50, "x": 8, "note": "$50 base plus $8 per employee; PEO plans are separate."}]}};
+  var REPORT = {"crm": "crm-software", "helpdesk": "help-desk", "pm": "project-management", "design": "design-tools", "payroll": "payroll-hr"};
+  var LABEL = {"crm": "CRM software", "helpdesk": "Help desk software", "pm": "Project management", "design": "Design tools", "payroll": "Payroll software"};
+  var cat = document.getElementById('calc-cat'), nEl = document.getElementById('calc-n'),
+      bill = document.getElementById('calc-bill'), body = document.getElementById('calc-body'),
+      unit = document.getElementById('calc-unit-label'), rep = document.getElementById('calc-report');
+  function cost(t, n, b) {
+    var p = t[b]; if (p === null) return null;
+    if (t.k === 'seat') return p * Math.max(n, t.x);
+    if (t.k === 'extra') return p + t.x * Math.max(n - 1, 0);
+    return p + t.x * n;
+  }
+  function fmt(v) { return '$' + (Math.round(v * 100) / 100).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}); }
+  function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  function render() {
+    var d = DATA[cat.value], n = parseInt(nEl.value, 10);
+    if (!(n >= 1)) n = 1; if (n > 500) n = 500;
+    var b = bill.value;
+    unit.textContent = d.unit.charAt(0).toUpperCase() + d.unit.slice(1);
+    var rows = d.tools.map(function(t) { return {t: t, c: cost({k: t.k, a: t.a, m: t.m, x: t.x}, n, b)}; });
+    rows.sort(function(x, y) { if (x.c === null) return 1; if (y.c === null) return -1; return x.c - y.c; });
+    body.innerHTML = rows.map(function(r) {
+      return '<tr><td class="tool-name"><a href="reports/' + r.t.s + '-pricing.html">' + esc(r.t.n) + '</a></td><td>' + esc(r.t.t) + '</td><td><span class="price">' + (r.c === null ? 'Not posted' : fmt(r.c)) + '</span></td><td>' + esc(r.t.note) + '</td></tr>';
+    }).join('');
+    rep.href = 'reports/' + REPORT[cat.value] + '.html';
+    rep.textContent = 'See the full ' + LABEL[cat.value].toLowerCase() + ' report \u2192';
+  }
+  cat.addEventListener('change', function() { nEl.value = DATA[cat.value].default; render(); });
+  nEl.addEventListener('input', render); bill.addEventListener('change', render);
+})();
+</script>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <p class="foot-disclosure">StackScope aggregates publicly available pricing and sentiment data. We are not affiliated with, and do not receive payment from, any vendor listed. Reports are informational and are not a purchasing recommendation — always confirm current terms with the vendor directly.</p>
+    <nav class="foot-links">
+      <a href="index.html#categories">Categories</a>
+      <a href="index.html#methodology">Methodology</a>
+      <a href="stackscope-changelog.html">Changelog</a>
+      <a href="stackscope-about.html">About</a>
+      <a href="stackscope-contact.html">Contact</a>
+      <a href="stackscope-terms.html">Terms</a>
+      <a href="stackscope-privacy.html">Privacy</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
